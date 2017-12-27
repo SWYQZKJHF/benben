@@ -414,10 +414,16 @@ namespace MissionPlanner
 
         public void updateLayout(object sender, EventArgs e)
         {
-            MenuSimulation.Visible = DisplayConfiguration.displaySimulation;
-            MenuTerminal.Visible = DisplayConfiguration.displayTerminal;
-            MenuHelp.Visible = DisplayConfiguration.displayHelp;
-            MenuDonate.Visible = DisplayConfiguration.displayDonate;
+            //MenuSimulation.Visible = DisplayConfiguration.displaySimulation;
+            //MenuTerminal.Visible = DisplayConfiguration.displayTerminal;
+            //MenuHelp.Visible = DisplayConfiguration.displayHelp;
+            //MenuDonate.Visible = DisplayConfiguration.displayDonate;
+            MenuInitConfig.Visible = false;
+            MenuTerminal.Visible = false;
+            MenuSimulation.Visible = false;
+            MenuTerminal.Visible = false;
+            MenuHelp.Visible = false;
+            MenuDonate.Visible = false;
             MissionPlanner.Controls.BackstageView.BackstageView.Advanced = DisplayConfiguration.isAdvancedMode;
 
             if (Settings.Instance.GetBoolean("menu_autohide") != DisplayConfiguration.autoHideMenuForce)
@@ -955,7 +961,8 @@ namespace MissionPlanner
 
             if (Program.IconFile != null)
             {
-                this.Icon = Icon.FromHandle(((Bitmap)Program.IconFile).GetHicon());
+                //this.Icon = Icon.FromHandle(((Bitmap)Program.IconFile).GetHicon());
+               
             }
 
             if (Program.Logo != null && Program.name == "VVVVZ")
@@ -1098,8 +1105,10 @@ namespace MissionPlanner
                 MenuFlightData.Visible = true;
                 MenuFlightPlanner.Visible = true;
                 MenuConfigTune.Visible = true;
+                MenuConfigTune.Visible = false;
                 MenuHelp.Visible = true;
                 MenuInitConfig.Visible = true;
+                MenuInitConfig.Visible = false;
                 MenuSimulation.Visible = true;
                 MenuTerminal.Visible = true;
             }
@@ -1110,8 +1119,10 @@ namespace MissionPlanner
                     MenuFlightData.Visible = true;
                     MenuFlightPlanner.Visible = true;
                     MenuConfigTune.Visible = true;
+                    MenuConfigTune.Visible = false;
                     MenuHelp.Visible = true;
                     MenuInitConfig.Visible = true;
+                    MenuInitConfig.Visible = false;
                     MenuSimulation.Visible = true;
                     MenuTerminal.Visible = true;
                 }

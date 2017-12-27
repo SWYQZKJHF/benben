@@ -2418,6 +2418,7 @@ namespace MissionPlanner.GCSViews
                 return;
             }
 
+            /*
             if (tabGauges.Width < 500)
             {
                 Gvspeed.Visible = false;
@@ -2442,6 +2443,7 @@ namespace MissionPlanner.GCSViews
                 Gvspeed.Location = new Point(0, 0);
                 Gspeed.Location = new Point(Gvspeed.Right, 0);
             }
+            */
 
             Galt.Location = new Point(Gspeed.Right, 0);
             Gheading.Location = new Point(Galt.Right, 0);

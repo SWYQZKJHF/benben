@@ -695,6 +695,8 @@ namespace MissionPlanner
 
             this.Text = splash.Text;
             titlebar = splash.Text;
+            //海帆添加，修改标题为公司名称
+            this.Text = "广州笨笨网络科技有限公司";
 
             if (!MONO) // windows only
             {
@@ -1104,7 +1106,7 @@ namespace MissionPlanner
             {
                 MenuFlightData.Visible = true;
                 MenuFlightPlanner.Visible = true;
-                MenuConfigTune.Visible = true;
+                //MenuConfigTune.Visible = true;
                 MenuConfigTune.Visible = false;
                 MenuHelp.Visible = true;
                 MenuInitConfig.Visible = true;
@@ -1118,7 +1120,7 @@ namespace MissionPlanner
                 {
                     MenuFlightData.Visible = true;
                     MenuFlightPlanner.Visible = true;
-                    MenuConfigTune.Visible = true;
+                    //MenuConfigTune.Visible = true;
                     MenuConfigTune.Visible = false;
                     MenuHelp.Visible = true;
                     MenuInitConfig.Visible = true;
@@ -1604,6 +1606,7 @@ namespace MissionPlanner
                 Settings.Instance[_connectionControl.CMB_serialport.Text + "_BAUD"] = _connectionControl.CMB_baudrate.Text;
 
                 this.Text = titlebar + " " + comPort.MAV.VersionString;
+
 
                 // refresh config window if needed
                 if (MyView.current != null)

@@ -418,7 +418,6 @@ namespace MissionPlanner
             //MenuTerminal.Visible = DisplayConfiguration.displayTerminal;
             //MenuHelp.Visible = DisplayConfiguration.displayHelp;
             //MenuDonate.Visible = DisplayConfiguration.displayDonate;
-            MenuInitConfig.Visible = false;
             MenuTerminal.Visible = false;
             MenuSimulation.Visible = false;
             MenuTerminal.Visible = false;
@@ -478,6 +477,8 @@ namespace MissionPlanner
                 {
                     t.TabPages.Remove(FlightData.tabGauges);
                 }
+                //海帆添加20171227：移除仪表选项卡
+                t.TabPages.Remove(FlightData.tabGauges);
                 if (DisplayConfiguration.displayStatusTab && !t.TabPages.Contains(FlightData.tabStatus))
                 {
                     t.TabPages.Add(FlightData.tabStatus);
@@ -977,9 +978,7 @@ namespace MissionPlanner
 
                 MenuFlightData.Visible = false;
                 MenuFlightPlanner.Visible = true;
-                MenuConfigTune.Visible = false;
                 MenuHelp.Visible = false;
-                MenuInitConfig.Visible = false;
                 MenuSimulation.Visible = false;
                 MenuTerminal.Visible = false;
             }
@@ -1106,11 +1105,7 @@ namespace MissionPlanner
             {
                 MenuFlightData.Visible = true;
                 MenuFlightPlanner.Visible = true;
-                //MenuConfigTune.Visible = true;
-                MenuConfigTune.Visible = false;
                 MenuHelp.Visible = true;
-                MenuInitConfig.Visible = true;
-                MenuInitConfig.Visible = false;
                 MenuSimulation.Visible = true;
                 MenuTerminal.Visible = true;
             }
@@ -1120,11 +1115,7 @@ namespace MissionPlanner
                 {
                     MenuFlightData.Visible = true;
                     MenuFlightPlanner.Visible = true;
-                    //MenuConfigTune.Visible = true;
-                    MenuConfigTune.Visible = false;
                     MenuHelp.Visible = true;
-                    MenuInitConfig.Visible = true;
-                    MenuInitConfig.Visible = false;
                     MenuSimulation.Visible = true;
                     MenuTerminal.Visible = true;
                 }
@@ -3810,14 +3801,7 @@ namespace MissionPlanner
 
         private void MenuArduPilot_Click(object sender, EventArgs e)
         {
-            try
-            {
-                System.Diagnostics.Process.Start("http://ardupilot.org/?utm_source=Menu&utm_campaign=MP");
-            }
-            catch
-            {
-                CustomMessageBox.Show("Failed to open url http://ardupilot.org");
-            }
+
         }
 
         private void connectionListToolStripMenuItem_Click(object sender, EventArgs e)
@@ -3885,6 +3869,56 @@ namespace MissionPlanner
                 }
                 //);
             }
+        }
+
+        //海帆增加20171227：外部触发工程模式
+        public bool Engineering_mode = false;
+
+        //海帆增加20171227：外部触发工程模式
+        private void MenuEngineering_Click(object sender, EventArgs e)
+        {
+            
+            if (Engineering_mode == false)
+            {
+                MenuConfigTune.Visible = true;
+                MenuInitConfig.Visible = true;
+                Engineering_mode = true;
+            }
+            else {
+                MenuConfigTune.Visible = false;
+                MenuInitConfig.Visible = false;
+                Engineering_mode = false;
+            }
+        }
+
+
+        //海帆添加20171227：菜单栏自动模式的代码
+        private void Menu_quickauto_Click(object sender, EventArgs e)
+        {
+            FlightData.BUT_quickauto_Click(sender, e);
+        }
+
+        //海帆添加20171227：菜单栏手动模式的代码
+        private void Menu_quickmanual_Click(object sender, EventArgs e)
+        {
+            FlightData.BUT_quickmanual_Click(sender, e);
+        }
+
+        //海帆添加20171227：菜单栏返航模式的代码
+        private void menu_quickrtl_Click(object sender, EventArgs e)
+        {
+            FlightData.BUT_quickrtl_Click(sender, e);
+        }
+
+        //海帆添加20171227：菜单栏Arm/DisArm模式的代码
+        private void menu_ARM_Click(object sender, EventArgs e)
+        {
+            FlightData.BUT_ARM_Click(sender, e);
+        }
+
+        private void menu_othermode_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

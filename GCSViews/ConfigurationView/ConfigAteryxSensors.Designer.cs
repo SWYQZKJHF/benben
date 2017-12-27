@@ -31,9 +31,9 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConfigAteryxSensors));
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.BUT_zero_att = new Controls.MyButton();
-            this.BUT_zero_press = new Controls.MyButton();
-            this.hud1 = new Controls.HUD();
+            this.BUT_zero_att = new MissionPlanner.Controls.MyButton();
+            this.BUT_zero_press = new MissionPlanner.Controls.MyButton();
+            this.hud1 = new MissionPlanner.Controls.HUD();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
@@ -59,9 +59,14 @@
             // 
             this.hud1.airspeed = 0F;
             this.hud1.alt = 0F;
+            this.hud1.AOA = 0F;
             this.hud1.BackColor = System.Drawing.Color.Black;
             this.hud1.batterylevel = 0F;
             this.hud1.batteryremaining = 0F;
+            this.hud1.bgimage = null;
+            this.hud1.connected = false;
+            this.hud1.critAOA = 25F;
+            this.hud1.critSSA = 30F;
             this.hud1.current = 0F;
             this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("airspeed", this.bindingSource1, "airspeed", true));
             this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("alt", this.bindingSource1, "alt", true));
@@ -91,23 +96,34 @@
             this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("wpno", this.bindingSource1, "wpno", true));
             this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("xtrack_error", this.bindingSource1, "xtrack_error", true));
             this.hud1.datetime = new System.DateTime(((long)(0)));
+            this.hud1.displayAOASSA = false;
             this.hud1.disttowp = 0F;
+            this.hud1.ekfstatus = 0F;
+            this.hud1.failsafe = false;
             this.hud1.gpsfix = 0F;
+            this.hud1.gpsfix2 = 0F;
             this.hud1.gpshdop = 0F;
+            this.hud1.gpshdop2 = 0F;
             this.hud1.groundalt = 0F;
             this.hud1.groundcourse = 0F;
             this.hud1.groundspeed = 0F;
             this.hud1.heading = 0F;
-            this.hud1.hudcolor = System.Drawing.Color.White;
+            this.hud1.hudcolor = System.Drawing.Color.LightGray;
             this.hud1.linkqualitygcs = 0F;
             resources.ApplyResources(this.hud1, "hud1");
+            this.hud1.lowairspeed = false;
+            this.hud1.lowgroundspeed = false;
+            this.hud1.lowvoltagealert = false;
+            this.hud1.message = null;
+            this.hud1.messagetime = new System.DateTime(((long)(0)));
             this.hud1.mode = "Manual";
             this.hud1.Name = "hud1";
             this.hud1.navpitch = 0F;
             this.hud1.navroll = 0F;
-            this.hud1.opengl = true;
             this.hud1.pitch = 0F;
             this.hud1.roll = 0F;
+            this.hud1.Russian = false;
+            this.hud1.SSA = 0F;
             this.hud1.status = false;
             this.hud1.streamjpg = ((System.IO.MemoryStream)(resources.GetObject("hud1.streamjpg")));
             this.hud1.targetalt = 0F;
@@ -115,6 +131,9 @@
             this.hud1.targetspeed = 0F;
             this.hud1.turnrate = 0F;
             this.hud1.verticalspeed = 0F;
+            this.hud1.vibex = 0F;
+            this.hud1.vibey = 0F;
+            this.hud1.vibez = 0F;
             this.hud1.VSync = false;
             this.hud1.wpno = 0;
             this.hud1.xtrack_error = 0F;
@@ -130,12 +149,12 @@
             // 
             // ConfigAteryxSensors
             // 
-            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.Controls.Add(this.hud1);
             this.Controls.Add(this.BUT_zero_press);
             this.Controls.Add(this.BUT_zero_att);
             this.Name = "ConfigAteryxSensors";
+            resources.ApplyResources(this, "$this");
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
 

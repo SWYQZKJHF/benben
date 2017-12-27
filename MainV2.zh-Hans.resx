@@ -177,4 +177,19 @@
   <data name="autoHideToolStripMenuItem.Text" xml:space="preserve">
     <value>自动隐藏</value>
   </data>
+  <data name="MenuEngineering.Text" xml:space="preserve">
+    <value>工程模式</value>
+  </data>
+  <data name="menu_ARM.Text" xml:space="preserve">
+    <value>解锁/锁定</value>
+  </data>
+  <data name="Menu_quickauto.Text" xml:space="preserve">
+    <value>自动</value>
+  </data>
+  <data name="Menu_quickmanual.Text" xml:space="preserve">
+    <value>手动</value>
+  </data>
+  <data name="menu_quickrtl.Text" xml:space="preserve">
+    <value>返航</value>
+  </data>
 </root>

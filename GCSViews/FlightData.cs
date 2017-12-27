@@ -1633,10 +1633,14 @@ namespace MissionPlanner.GCSViews
             }
         }
 
+        //海帆添加注释20171227：这里应该是更新源数据的地方
         private void updateBindingSourceWork()
         {
             try
             {
+                //海帆添加20171227：把原先不断更新仪表盘数据的触发放到这里来
+                MainV2.comPort.MAV.cs.UpdateCurrentSettings(bindingSourceGaugesTab);
+
                 if (this.Visible)
                 {
                     //Console.Write("bindingSource1 ");
@@ -1653,9 +1657,11 @@ namespace MissionPlanner.GCSViews
                     {
                         MainV2.comPort.MAV.cs.UpdateCurrentSettings(bindingSourceQuickTab);
                     }
+                    //海帆添加注释20171227：这里说的是如果触发到了仪表的选项卡，那么就触发下面不知道什么鬼函数
                     else if (tabControlactions.SelectedTab == tabGauges)
                     {
-                        MainV2.comPort.MAV.cs.UpdateCurrentSettings(bindingSourceGaugesTab);
+                        //海帆添加20171227：注释掉这里，因为仪表盘已经放到主界面下，所以不断更新数据放到上面
+                        //MainV2.comPort.MAV.cs.UpdateCurrentSettings(bindingSourceGaugesTab);
                     }
                     else if (tabControlactions.SelectedTab == tabPagePreFlight)
                     {
@@ -2418,7 +2424,7 @@ namespace MissionPlanner.GCSViews
                 return;
             }
 
-            /*
+            
             if (tabGauges.Width < 500)
             {
                 Gvspeed.Visible = false;
@@ -2443,7 +2449,7 @@ namespace MissionPlanner.GCSViews
                 Gvspeed.Location = new Point(0, 0);
                 Gspeed.Location = new Point(Gvspeed.Right, 0);
             }
-            */
+            
 
             Galt.Location = new Point(Gspeed.Right, 0);
             Gheading.Location = new Point(Galt.Right, 0);
@@ -2522,39 +2528,43 @@ namespace MissionPlanner.GCSViews
             }
         }
 
-        private void BUT_quickauto_Click(object sender, EventArgs e)
+        public void BUT_quickauto_Click(object sender, EventArgs e)
         {
+            //海帆添加20171227：注释掉下面两行关于按钮的触发，使用外部调用来设置自动模式
             try
             {
-                ((Button) sender).Enabled = false;
+                
+                //((Button) sender).Enabled = false;
                 MainV2.comPort.setMode("Auto");
             }
             catch
             {
                 CustomMessageBox.Show(Strings.CommandFailed, Strings.ERROR);
             }
-            ((Button) sender).Enabled = true;
+            //((Button) sender).Enabled = true;
         }
 
-        private void BUT_quickrtl_Click(object sender, EventArgs e)
+        public void BUT_quickrtl_Click(object sender, EventArgs e)
         {
+            //海帆添加20171227：注释掉下面两行关于按钮的触发，使用外部调用来设置返航模式
             try
             {
-                ((Button) sender).Enabled = false;
+                //((Button) sender).Enabled = false;
                 MainV2.comPort.setMode("RTL");
             }
             catch
             {
                 CustomMessageBox.Show(Strings.CommandFailed, Strings.ERROR);
             }
-            ((Button) sender).Enabled = true;
+            //((Button) sender).Enabled = true;
         }
 
-        private void BUT_quickmanual_Click(object sender, EventArgs e)
+        public void BUT_quickmanual_Click(object sender, EventArgs e)
         {
+            //海帆添加20171227：注释掉下面两行关于按钮的触发，使用外部调用来设置手动模式
             try
             {
-                ((Button) sender).Enabled = false;
+                //((Button) sender).Enabled = false;
                 if (MainV2.comPort.MAV.cs.firmware == MainV2.Firmwares.ArduPlane ||
                     MainV2.comPort.MAV.cs.firmware == MainV2.Firmwares.Ateryx ||
                     MainV2.comPort.MAV.cs.firmware == MainV2.Firmwares.ArduRover)
@@ -2566,7 +2576,7 @@ namespace MissionPlanner.GCSViews
             {
                 CustomMessageBox.Show(Strings.CommandFailed, Strings.ERROR);
             }
-            ((Button) sender).Enabled = true;
+            //((Button) sender).Enabled = true;
         }
 
         private void BUT_log2kml_Click(object sender, EventArgs e)
@@ -3509,7 +3519,7 @@ namespace MissionPlanner.GCSViews
             Refresh();
         }
 
-        private void BUT_ARM_Click(object sender, EventArgs e)
+        public void BUT_ARM_Click(object sender, EventArgs e)
         {
             if (!MainV2.comPort.BaseStream.IsOpen)
                 return;

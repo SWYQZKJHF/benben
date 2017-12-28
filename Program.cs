@@ -126,6 +126,7 @@ namespace MissionPlanner
 
             string strVersion = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
             Splash.Text = name + " " + Application.ProductVersion + " build " + strVersion;
+            Splash.Text = "广州笨笨网络科技有限公司";
             Splash.Show();
 
             Application.DoEvents();

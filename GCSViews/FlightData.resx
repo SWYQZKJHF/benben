@@ -832,7 +832,7 @@
     <value>NoControl</value>
   </data>
   <data name="BUTactiondo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>86, 7</value>
+    <value>241, 347</value>
   </data>
   <data name="BUTactiondo.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 23</value>
@@ -845,6 +845,9 @@
   </data>
   <data name="BUTactiondo.ToolTip" xml:space="preserve">
     <value>Preform the action ot the left</value>
+  </data>
+  <data name="BUTactiondo.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;BUTactiondo.Name" xml:space="preserve">
     <value>BUTactiondo</value>
@@ -1696,13 +1699,16 @@
     <value>12</value>
   </data>
   <data name="CMB_action.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 7</value>
+    <value>159, 347</value>
   </data>
   <data name="CMB_action.Size" type="System.Drawing.Size, System.Drawing">
     <value>76, 20</value>
   </data>
   <data name="CMB_action.TabIndex" type="System.Int32, mscorlib">
     <value>59</value>
+  </data>
+  <data name="CMB_action.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;CMB_action.Name" xml:space="preserve">
     <value>CMB_action</value>

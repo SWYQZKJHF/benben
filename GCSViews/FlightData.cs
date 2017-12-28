@@ -1961,7 +1961,7 @@ namespace MissionPlanner.GCSViews
                 MainV2.comPort.MAV.camerapoints.Clear();
         }
 
-        private void BUTactiondo_Click(object sender, EventArgs e)
+        public void BUTactiondo_Click(object sender, EventArgs e)
         {
             try
             {
@@ -1983,7 +1983,7 @@ namespace MissionPlanner.GCSViews
             {
                 try
                 {
-                    ((Button) sender).Enabled = false;
+                    //((Button) sender).Enabled = false;
 
                     int param1 = 0;
                     int param3 = 1;
@@ -2007,7 +2007,7 @@ namespace MissionPlanner.GCSViews
                 {
                     CustomMessageBox.Show(Strings.CommandFailed, Strings.ERROR);
                 }
-                ((Button) sender).Enabled = true;
+                //((Button) sender).Enabled = true;
             }
         }
 

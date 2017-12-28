@@ -77,9 +77,16 @@ namespace MissionPlanner
             this.Menu_quickauto = new System.Windows.Forms.ToolStripButton();
             this.Menu_quickmanual = new System.Windows.Forms.ToolStripButton();
             this.menu_quickrtl = new System.Windows.Forms.ToolStripButton();
+            this.menu_othermode = new System.Windows.Forms.ToolStripButton();
+            this.menu_BUTactiondo = new System.Windows.Forms.ToolStripButton();
             this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
             this.nishuosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menu_othermode = new System.Windows.Forms.ToolStripButton();
+            this.BUT_Trigger_Camera_NOW = new System.Windows.Forms.ToolStripButton();
+            this.BUT_PREFLIGHT_REBOOT_SHUTDOWN = new System.Windows.Forms.ToolStripButton();
+            this.BUT_MISSION_START = new System.Windows.Forms.ToolStripButton();
+            this.BUT_PREFLIGHT_CALIBRATION = new System.Windows.Forms.ToolStripButton();
+            this.BUT_RETURN_TO_LAUNCH = new System.Windows.Forms.ToolStripButton();
+            this.BUT_LOITER_UNLIM = new System.Windows.Forms.ToolStripButton();
             this.MainMenu.SuspendLayout();
             this.CTX_mainmenu.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -312,7 +319,13 @@ namespace MissionPlanner
             this.other_Throw,
             this.other_Avoid_ADSB,
             this.other_Guided_NoGPS,
-            this.other_Smart_RTL});
+            this.other_Smart_RTL,
+            this.BUT_LOITER_UNLIM,
+            this.BUT_RETURN_TO_LAUNCH,
+            this.BUT_PREFLIGHT_CALIBRATION,
+            this.BUT_MISSION_START,
+            this.BUT_PREFLIGHT_REBOOT_SHUTDOWN,
+            this.BUT_Trigger_Camera_NOW});
             this.menuStrip2.Name = "menuStrip2";
             this.menuStrip2.ShowItemToolTips = true;
             this.menuStrip2.Stretch = false;
@@ -456,7 +469,8 @@ namespace MissionPlanner
             this.Menu_quickauto,
             this.Menu_quickmanual,
             this.menu_quickrtl,
-            this.menu_othermode});
+            this.menu_othermode,
+            this.menu_BUTactiondo});
             resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.ShowItemToolTips = true;
@@ -498,6 +512,24 @@ namespace MissionPlanner
             this.menu_quickrtl.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
             this.menu_quickrtl.Click += new System.EventHandler(this.menu_quickrtl_Click);
             // 
+            // menu_othermode
+            // 
+            resources.ApplyResources(this.menu_othermode, "menu_othermode");
+            this.menu_othermode.ForeColor = System.Drawing.Color.White;
+            this.menu_othermode.Margin = new System.Windows.Forms.Padding(0);
+            this.menu_othermode.Name = "menu_othermode";
+            this.menu_othermode.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
+            this.menu_othermode.Click += new System.EventHandler(this.menu_othermode_Click_1);
+            // 
+            // menu_BUTactiondo
+            // 
+            resources.ApplyResources(this.menu_BUTactiondo, "menu_BUTactiondo");
+            this.menu_BUTactiondo.ForeColor = System.Drawing.Color.White;
+            this.menu_BUTactiondo.Margin = new System.Windows.Forms.Padding(0);
+            this.menu_BUTactiondo.Name = "menu_BUTactiondo";
+            this.menu_BUTactiondo.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
+            this.menu_BUTactiondo.Click += new System.EventHandler(this.menu_BUTactiondo_Click);
+            // 
             // toolStripTextBox1
             // 
             this.toolStripTextBox1.Name = "toolStripTextBox1";
@@ -508,14 +540,53 @@ namespace MissionPlanner
             this.nishuosToolStripMenuItem.Name = "nishuosToolStripMenuItem";
             resources.ApplyResources(this.nishuosToolStripMenuItem, "nishuosToolStripMenuItem");
             // 
-            // menu_othermode
+            // BUT_Trigger_Camera_NOW
             // 
-            resources.ApplyResources(this.menu_othermode, "menu_othermode");
-            this.menu_othermode.ForeColor = System.Drawing.Color.White;
-            this.menu_othermode.Margin = new System.Windows.Forms.Padding(0);
-            this.menu_othermode.Name = "menu_othermode";
-            this.menu_othermode.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
-            this.menu_othermode.Click += new System.EventHandler(this.menu_othermode_Click_1);
+            resources.ApplyResources(this.BUT_Trigger_Camera_NOW, "BUT_Trigger_Camera_NOW");
+            this.BUT_Trigger_Camera_NOW.ForeColor = System.Drawing.Color.White;
+            this.BUT_Trigger_Camera_NOW.Margin = new System.Windows.Forms.Padding(0);
+            this.BUT_Trigger_Camera_NOW.Name = "BUT_Trigger_Camera_NOW";
+            this.BUT_Trigger_Camera_NOW.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
+            // 
+            // BUT_PREFLIGHT_REBOOT_SHUTDOWN
+            // 
+            resources.ApplyResources(this.BUT_PREFLIGHT_REBOOT_SHUTDOWN, "BUT_PREFLIGHT_REBOOT_SHUTDOWN");
+            this.BUT_PREFLIGHT_REBOOT_SHUTDOWN.ForeColor = System.Drawing.Color.White;
+            this.BUT_PREFLIGHT_REBOOT_SHUTDOWN.Margin = new System.Windows.Forms.Padding(0);
+            this.BUT_PREFLIGHT_REBOOT_SHUTDOWN.Name = "BUT_PREFLIGHT_REBOOT_SHUTDOWN";
+            this.BUT_PREFLIGHT_REBOOT_SHUTDOWN.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
+            // 
+            // BUT_MISSION_START
+            // 
+            resources.ApplyResources(this.BUT_MISSION_START, "BUT_MISSION_START");
+            this.BUT_MISSION_START.ForeColor = System.Drawing.Color.White;
+            this.BUT_MISSION_START.Margin = new System.Windows.Forms.Padding(0);
+            this.BUT_MISSION_START.Name = "BUT_MISSION_START";
+            this.BUT_MISSION_START.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
+            // 
+            // BUT_PREFLIGHT_CALIBRATION
+            // 
+            resources.ApplyResources(this.BUT_PREFLIGHT_CALIBRATION, "BUT_PREFLIGHT_CALIBRATION");
+            this.BUT_PREFLIGHT_CALIBRATION.ForeColor = System.Drawing.Color.White;
+            this.BUT_PREFLIGHT_CALIBRATION.Margin = new System.Windows.Forms.Padding(0);
+            this.BUT_PREFLIGHT_CALIBRATION.Name = "BUT_PREFLIGHT_CALIBRATION";
+            this.BUT_PREFLIGHT_CALIBRATION.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
+            // 
+            // BUT_RETURN_TO_LAUNCH
+            // 
+            resources.ApplyResources(this.BUT_RETURN_TO_LAUNCH, "BUT_RETURN_TO_LAUNCH");
+            this.BUT_RETURN_TO_LAUNCH.ForeColor = System.Drawing.Color.White;
+            this.BUT_RETURN_TO_LAUNCH.Margin = new System.Windows.Forms.Padding(0);
+            this.BUT_RETURN_TO_LAUNCH.Name = "BUT_RETURN_TO_LAUNCH";
+            this.BUT_RETURN_TO_LAUNCH.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
+            // 
+            // BUT_LOITER_UNLIM
+            // 
+            resources.ApplyResources(this.BUT_LOITER_UNLIM, "BUT_LOITER_UNLIM");
+            this.BUT_LOITER_UNLIM.ForeColor = System.Drawing.Color.White;
+            this.BUT_LOITER_UNLIM.Margin = new System.Windows.Forms.Padding(0);
+            this.BUT_LOITER_UNLIM.Name = "BUT_LOITER_UNLIM";
+            this.BUT_LOITER_UNLIM.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
             // 
             // MainV2
             // 
@@ -590,5 +661,12 @@ namespace MissionPlanner
         public System.Windows.Forms.ToolStripButton other_Guided_NoGPS;
         public System.Windows.Forms.ToolStripButton other_Smart_RTL;
         public System.Windows.Forms.ToolStripButton menu_othermode;
+        public System.Windows.Forms.ToolStripButton menu_BUTactiondo;
+        public System.Windows.Forms.ToolStripButton BUT_Trigger_Camera_NOW;
+        public System.Windows.Forms.ToolStripButton BUT_LOITER_UNLIM;
+        public System.Windows.Forms.ToolStripButton BUT_RETURN_TO_LAUNCH;
+        public System.Windows.Forms.ToolStripButton BUT_PREFLIGHT_CALIBRATION;
+        public System.Windows.Forms.ToolStripButton BUT_MISSION_START;
+        public System.Windows.Forms.ToolStripButton BUT_PREFLIGHT_REBOOT_SHUTDOWN;
     }
 }

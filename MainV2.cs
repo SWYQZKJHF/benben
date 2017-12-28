@@ -1019,10 +1019,13 @@ namespace MissionPlanner
             other_Avoid_ADSB.Click += othermode_click_function;
             other_Guided_NoGPS.Click += othermode_click_function;
             other_Smart_RTL.Click += othermode_click_function;
-
-
-
-
+            //海帆添加20171228：添加选择“执行动作”的时候的点击事件
+            BUT_LOITER_UNLIM.Click += BUTactiondo_click_function;
+            BUT_RETURN_TO_LAUNCH.Click += BUTactiondo_click_function;
+            BUT_PREFLIGHT_CALIBRATION.Click += BUTactiondo_click_function;
+            BUT_MISSION_START.Click += BUTactiondo_click_function;
+            BUT_PREFLIGHT_REBOOT_SHUTDOWN.Click += BUTactiondo_click_function;
+            BUT_Trigger_Camera_NOW.Click += BUTactiondo_click_function;
         }
 
         void cmb_sysid_Click(object sender, EventArgs e)
@@ -3958,19 +3961,28 @@ namespace MissionPlanner
             foreach (ToolStripButton button_temp in menuStrip2.Items) {
                 button_temp.Visible = false;
             }
-
-
         }
 
+        //海帆添加20171228：展开选项2
+        private void show_menustrip2() {
+            foreach (ToolStripButton button_temp in menuStrip2.Items)
+            {
+                button_temp.Visible = false;
+            }
+
+            panel1.Height = 207;
+            menuStrip2.Visible = true;
+
+        }
 
         //海帆添加20171228：按下其他模式按钮时候的触发
         private void menu_othermode_Click_1(object sender, EventArgs e)
         {
+            show_menustrip2();
+
             //海帆添加20171228：更新其他模式的控件源
             FlightData.CMB_modes.DataSource = Common.getModesList(MainV2.comPort.MAV.cs);
 
-            panel1.Height = 207;
-            menuStrip2.Visible = true;
             //海帆添加20171228：添加选择其他模式的时候的显示菜单
             for (int i = 0; i < FlightData.CMB_modes.Items.Count; i++)
             {
@@ -4035,8 +4047,7 @@ namespace MissionPlanner
             }
 
         }
-
-
+        
         //海帆添加20171228：选择其他模式的时候触发的函数
         void othermode_click_function(object sender, EventArgs e)
         {
@@ -4051,6 +4062,47 @@ namespace MissionPlanner
             }
             MainV2.comPort.setMode(other_mode_button_name);
         }
+
+        //海帆添加20171228，选择“执行动作”按钮的时候的操作
+        private void menu_BUTactiondo_Click(object sender, EventArgs e)
+        {
+            show_menustrip2();
+
+            //选择显示什么操作
+            BUT_LOITER_UNLIM.Visible = true;
+            BUT_RETURN_TO_LAUNCH.Visible = true;
+            BUT_PREFLIGHT_CALIBRATION.Visible = true;
+            BUT_MISSION_START.Visible = true;
+            BUT_PREFLIGHT_REBOOT_SHUTDOWN.Visible = true;
+            BUT_Trigger_Camera_NOW.Visible = true;
+            
+        }
+
+        //海帆添加20171228：选择其他模式的时候触发的函数
+        void BUTactiondo_click_function(object sender, EventArgs e) {
+            ToolStripButton BUTactiondo_button = (ToolStripButton)sender;
+            string BUTactiondo_button_name = BUTactiondo_button.Name;
+            if (BUTactiondo_button_name == "BUT_Trigger_Camera_NOW")
+            {
+                BUTactiondo_button_name = "Trigger Camera NOW";
+            }
+            else {
+                BUTactiondo_button_name = BUTactiondo_button_name.Replace("BUT_","");
+            }
+
+            for (int i = 0; i < 6; i++)
+            {
+                FlightData.CMB_action.SelectedIndex = i;
+                if (FlightData.CMB_action.SelectedItem.ToString() == BUTactiondo_button_name) {
+                    break;
+                }
+            }
+
+            //海帆添加20171228：执行命令public
+            FlightData.BUTactiondo_Click(sender,e);
+
+        }
+
 
 
     }

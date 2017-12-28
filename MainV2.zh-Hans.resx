@@ -192,4 +192,10 @@
   <data name="menu_quickrtl.Text" xml:space="preserve">
     <value>返航</value>
   </data>
+  <data name="menu_othermode.Text" xml:space="preserve">
+    <value>其他模式</value>
+  </data>
+  <data name="menu_BUTactiondo.Text" xml:space="preserve">
+    <value>执行动作</value>
+  </data>
 </root>

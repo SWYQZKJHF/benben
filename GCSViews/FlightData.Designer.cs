@@ -2274,9 +2274,7 @@
         private Controls.MyButton BUT_clear_track;
         private System.Windows.Forms.CheckBox CB_tuning;
         private Controls.MyButton BUT_RAWSensor;
-        private Controls.MyButton BUTactiondo;
         private Controls.MyButton BUTrestartmission;
-        private System.Windows.Forms.ComboBox CMB_action;
         private Controls.MyButton BUT_Homealt;
         private System.Windows.Forms.TrackBar tracklog;
         private Controls.MyButton BUT_playlog;
@@ -2423,5 +2421,7 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         public System.Windows.Forms.MenuStrip menuStrip3;
         public System.Windows.Forms.ComboBox CMB_modes;
+        public System.Windows.Forms.ComboBox CMB_action;
+        public Controls.MyButton BUTactiondo;
     }
 }

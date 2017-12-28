@@ -2399,6 +2399,7 @@ namespace MissionPlanner.GCSViews
 
             float scale = tabGauges.Width/(float) tabGauges.Height;
 
+            /*
             if (scale > 0.5 && scale < 1.9)
             {
 // square
@@ -2452,7 +2453,7 @@ namespace MissionPlanner.GCSViews
             
 
             Galt.Location = new Point(Gspeed.Right, 0);
-            Gheading.Location = new Point(Galt.Right, 0);
+            Gheading.Location = new Point(Galt.Right, 0);*/
         }
 
         private void BUT_setmode_Click(object sender, EventArgs e)
@@ -3512,6 +3513,28 @@ namespace MissionPlanner.GCSViews
 
             if (hud1.Parent == this.SubMainLeft.Panel1)
                 SubMainLeft.SplitterDistance = hud1.Height;
+
+            //海帆添加20171228：当hud变换尺寸的时候仪表跟着变换尺寸
+            int min_size;
+            if (SubMainLeft.Panel2.Height < SubMainLeft.Panel2.Width)
+            {
+                min_size = SubMainLeft.Panel2.Height;
+            }
+            else {
+                min_size = SubMainLeft.Panel2.Width;
+            }
+            Gvspeed.Width = min_size / 2;
+            Gvspeed.Height = min_size / 2;
+            Gspeed.Width = min_size / 2;
+            Gspeed.Height = min_size / 2;
+            Galt.Width = min_size / 2;
+            Galt.Height = min_size / 2;
+            Gheading.Width = min_size / 2;
+            Gheading.Height = min_size / 2;
+            Gvspeed.Location = new Point(0, 0);
+            Gspeed.Location = new Point(Gvspeed.Width, 0);
+            Galt.Location = new Point(0, Gvspeed.Height);
+            Gheading.Location = new Point(Gvspeed.Width, Gvspeed.Height);
         }
 
         private void resetToolStripMenuItem_Click(object sender, EventArgs e)

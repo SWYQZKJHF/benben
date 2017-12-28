@@ -198,4 +198,13 @@
   <data name="menu_BUTactiondo.Text" xml:space="preserve">
     <value>执行动作</value>
   </data>
+  <data name="menu_BUT_clear_track.Text" xml:space="preserve">
+    <value>清除轨迹</value>
+  </data>
+  <data name="menu_BUT_resumemis.Text" xml:space="preserve">
+    <value>恢复任务</value>
+  </data>
+  <data name="menu_BUT_abortland.Text" xml:space="preserve">
+    <value>放弃着陆</value>
+  </data>
 </root>

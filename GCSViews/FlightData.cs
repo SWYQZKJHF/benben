@@ -1952,7 +1952,7 @@ namespace MissionPlanner.GCSViews
             }
         }
 
-        private void BUT_clear_track_Click(object sender, EventArgs e)
+        public void BUT_clear_track_Click(object sender, EventArgs e)
         {
             if (route != null)
                 route.Points.Clear();
@@ -4037,7 +4037,7 @@ namespace MissionPlanner.GCSViews
             txt_messagebox.ScrollToCaret();
         }
 
-        private void BUT_resumemis_Click(object sender, EventArgs e)
+        public void BUT_resumemis_Click(object sender, EventArgs e)
         {
             if (
                 Common.MessageShowAgain("Resume Mission",
@@ -4357,6 +4357,12 @@ namespace MissionPlanner.GCSViews
                     a++;
                 }
             }
+            //海帆添加20171228：在这里去掉不需要的切换项目
+            tabControlactions.TabPages.Remove(tabGauges);   //移除仪表盘
+            tabControlactions.TabPages.Remove(tabStatus);   //移除状态
+            tabControlactions.TabPages.Remove(tabServo);    //移除舵机
+            
+
 
             ThemeManager.ApplyThemeTo(tabControlactions);
         }

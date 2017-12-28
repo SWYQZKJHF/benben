@@ -471,21 +471,19 @@ namespace MissionPlanner
                 }
                 if (DisplayConfiguration.displayGaugesTab && !t.TabPages.Contains(FlightData.tabGauges))
                 {
-                    t.TabPages.Add(FlightData.tabGauges);
+                    //t.TabPages.Add(FlightData.tabGauges);
                 }
                 else if (!DisplayConfiguration.displayGaugesTab && t.TabPages.Contains(FlightData.tabGauges))
                 {
-                    t.TabPages.Remove(FlightData.tabGauges);
+                    //t.TabPages.Remove(FlightData.tabGauges);
                 }
-                //海帆添加20171227：移除仪表选项卡
-                //t.TabPages.Remove(FlightData.tabGauges);
                 if (DisplayConfiguration.displayStatusTab && !t.TabPages.Contains(FlightData.tabStatus))
                 {
-                    t.TabPages.Add(FlightData.tabStatus);
+                    //t.TabPages.Add(FlightData.tabStatus);
                 }
                 else if (!DisplayConfiguration.displayStatusTab && t.TabPages.Contains(FlightData.tabStatus))
                 {
-                    t.TabPages.Remove(FlightData.tabStatus);
+                    //t.TabPages.Remove(FlightData.tabStatus);
                 }
                 if (DisplayConfiguration.displayServoTab && !t.TabPages.Contains(FlightData.tabServo))
                 {
@@ -1026,6 +1024,9 @@ namespace MissionPlanner
             BUT_MISSION_START.Click += BUTactiondo_click_function;
             BUT_PREFLIGHT_REBOOT_SHUTDOWN.Click += BUTactiondo_click_function;
             BUT_Trigger_Camera_NOW.Click += BUTactiondo_click_function;
+
+            
+
         }
 
         void cmb_sysid_Click(object sender, EventArgs e)
@@ -4098,11 +4099,33 @@ namespace MissionPlanner
                 }
             }
 
-            //海帆添加20171228：执行命令public
+            //海帆添加20171228：执行命令
             FlightData.BUTactiondo_Click(sender,e);
 
         }
 
+        //海帆增加20171228：清除轨迹的功能
+        private void menu_BUT_clear_track_Click(object sender, EventArgs e)
+        {
+            hide_menustrip2();
+            FlightData.BUT_clear_track_Click(sender,e);
+        }
+
+        //海帆增加20171228：放弃任务的功能
+        private void menu_BUT_resumemis_Click(object sender, EventArgs e)
+        {
+            hide_menustrip2();
+            FlightData.BUT_resumemis_Click(sender, e);
+        }
+
+        //海帆添加20171228：放弃着落功能
+        private void menu_BUT_abortland_Click(object sender, EventArgs e)
+        {
+            hide_menustrip2();
+            if (!MainV2.comPort.BaseStream.IsOpen)
+                return;
+            MainV2.comPort.doAbortLand();
+        }
 
 
     }

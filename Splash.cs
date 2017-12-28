@@ -17,11 +17,14 @@ namespace MissionPlanner
             string strVersion = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
 
             TXT_version.Text = "Version: " + Application.ProductVersion; // +" Build " + strVersion;
+            //海帆添加20170228：修改公司logo和初始启动画面的配置
+            TXT_version.Text = "Version:V1.0";
+            label1.Text = "广州笨笨网络科技有限公司";
 
             if (Program.Logo != null)
             {
                 pictureBox1.BackgroundImage = MissionPlanner.Properties.Resources.bgdark;
-                pictureBox1.Image = Program.Logo;
+                //pictureBox1.Image = Program.Logo;
                 pictureBox1.Visible = true;
             }
         }

@@ -4559,6 +4559,8 @@ namespace MissionPlanner.GCSViews
 
             MainV2.comPort.sendPacket(go, MainV2.comPort.MAV.sysid, MainV2.comPort.MAV.compid);
         }
+
+        
     }
 }
  

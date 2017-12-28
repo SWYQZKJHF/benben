@@ -94,16 +94,20 @@ namespace MissionPlanner
             }
 
             if (File.Exists(Settings.GetRunningDirectory() + "logo.png"))
+            {
                 Logo = new Bitmap(Settings.GetRunningDirectory() + "logo.png");
+            }
 
             if (File.Exists(Settings.GetRunningDirectory() + "icon.png"))
             {
                 // 128*128
-                IconFile = new Bitmap(Settings.GetRunningDirectory() + "icon.png");
+                //IconFile = new Bitmap(Settings.GetRunningDirectory() + "icon.png");
+                IconFile = Properties.Resources.benben_logo;
             }
             else
             {
-                IconFile = MissionPlanner.Properties.Resources.mpdesktop.ToBitmap();
+                //IconFile = MissionPlanner.Properties.Resources.mpdesktop.ToBitmap();
+                IconFile = Properties.Resources.benben_logo;
             }
 
             if (File.Exists(Settings.GetRunningDirectory() + "splashbg.png")) // 600*375

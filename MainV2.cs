@@ -478,7 +478,7 @@ namespace MissionPlanner
                     t.TabPages.Remove(FlightData.tabGauges);
                 }
                 //海帆添加20171227：移除仪表选项卡
-                t.TabPages.Remove(FlightData.tabGauges);
+                //t.TabPages.Remove(FlightData.tabGauges);
                 if (DisplayConfiguration.displayStatusTab && !t.TabPages.Contains(FlightData.tabStatus))
                 {
                     t.TabPages.Add(FlightData.tabStatus);
@@ -3896,29 +3896,106 @@ namespace MissionPlanner
         private void Menu_quickauto_Click(object sender, EventArgs e)
         {
             FlightData.BUT_quickauto_Click(sender, e);
+            hide_menustrip2();
         }
 
         //海帆添加20171227：菜单栏手动模式的代码
         private void Menu_quickmanual_Click(object sender, EventArgs e)
         {
             FlightData.BUT_quickmanual_Click(sender, e);
+            hide_menustrip2();
         }
 
         //海帆添加20171227：菜单栏返航模式的代码
         private void menu_quickrtl_Click(object sender, EventArgs e)
         {
             FlightData.BUT_quickrtl_Click(sender, e);
+            hide_menustrip2();
         }
 
         //海帆添加20171227：菜单栏Arm/DisArm模式的代码
         private void menu_ARM_Click(object sender, EventArgs e)
         {
             FlightData.BUT_ARM_Click(sender, e);
+            hide_menustrip2();
         }
 
         private void menu_othermode_Click(object sender, EventArgs e)
         {
+            panel1.Height = 207;
+            menuStrip2.Visible = true;
+            //海帆添加20171228：添加选择其他模式的时候的显示菜单
+            for (int i = 0; i < FlightData.CMB_modes.Items.Count; i++)
+            {
+                FlightData.CMB_modes.SelectedIndex = i;
+                string msg_temp = FlightData.CMB_modes.SelectedItem.ToString();
+                msg_temp = Regex.Replace(msg_temp, @"\d", "");
+                msg_temp = msg_temp.Replace("[", "");
+                msg_temp = msg_temp.Replace("]", "");
+                msg_temp = msg_temp.Replace(",", "");
+                msg_temp = msg_temp.Trim();
+                switch (msg_temp) {
+                    case "Stabilize":
+                        other_Stabilize.Visible = true;
+                        break;
+                    case "Acro":
+                        other_Acro.Visible = true;
+                        break;
+                    case "AltHold":
+                        other_AltHold.Visible = true;
+                        break;
+                    case "Guided":
+                        other_Guided.Visible = true;
+                        break;
+                    case "Circle":
+                        other_Circle.Visible = true;
+                        break;
+                    case "Land":
+                        other_Land.Visible = true;
+                        break;
+                    case "Drift":
+                        other_Drift.Visible = true;
+                        break;
+                    case "Sport":
+                        other_Sport.Visible = true;
+                        break;
+                    case "Flip":
+                        other_Flip.Visible = true;
+                        break;
+                    case "AutoTune":
+                        other_AutoTune.Visible = true;
+                        break;
+                    case "PosHold":
+                        other_PosHold.Visible = true;
+                        break;
+                    case "Brake":
+                        other_Brake.Visible = true;
+                        break;
+                    case "Throw":
+                        other_Throw.Visible = true;
+                        break;
+                    case "Avoid_ADSB":
+                        other_Avoid_ADSB.Visible = true;
+                        break;
+                    case "Guided_NoGPS":
+                        other_Guided_NoGPS.Visible = true;
+                        break;
+                    case "Smart_RTL":
+                        other_Smart_RTL.Visible = true;
+                        break;
+                }
+            }
+            
+
+
 
         }
+
+        //海帆添加20171228：隐藏选项2
+        private void hide_menustrip2() {
+            menuStrip2.Visible = false;
+            panel1.Height = 138;
+        }
+
     }
 }

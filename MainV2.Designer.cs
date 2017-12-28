@@ -55,16 +55,35 @@ namespace MissionPlanner
             this.MenuArduPilot = new System.Windows.Forms.ToolStripButton();
             this.menu = new MissionPlanner.Controls.MyButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.menuStrip2 = new System.Windows.Forms.MenuStrip();
+            this.other_Stabilize = new System.Windows.Forms.ToolStripButton();
+            this.other_Acro = new System.Windows.Forms.ToolStripButton();
+            this.other_AltHold = new System.Windows.Forms.ToolStripButton();
+            this.other_Guided = new System.Windows.Forms.ToolStripButton();
+            this.other_Circle = new System.Windows.Forms.ToolStripButton();
+            this.other_Land = new System.Windows.Forms.ToolStripButton();
+            this.other_Drift = new System.Windows.Forms.ToolStripButton();
+            this.other_Sport = new System.Windows.Forms.ToolStripButton();
+            this.other_Flip = new System.Windows.Forms.ToolStripButton();
+            this.other_AutoTune = new System.Windows.Forms.ToolStripButton();
+            this.other_PosHold = new System.Windows.Forms.ToolStripButton();
+            this.other_Brake = new System.Windows.Forms.ToolStripButton();
+            this.other_Throw = new System.Windows.Forms.ToolStripButton();
+            this.other_Avoid_ADSB = new System.Windows.Forms.ToolStripButton();
+            this.other_Guided_NoGPS = new System.Windows.Forms.ToolStripButton();
+            this.other_Smart_RTL = new System.Windows.Forms.ToolStripButton();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.menu_ARM = new System.Windows.Forms.ToolStripButton();
             this.Menu_quickauto = new System.Windows.Forms.ToolStripButton();
             this.Menu_quickmanual = new System.Windows.Forms.ToolStripButton();
             this.menu_quickrtl = new System.Windows.Forms.ToolStripButton();
-            this.menu_ARM = new System.Windows.Forms.ToolStripButton();
-            this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
             this.menu_othermode = new System.Windows.Forms.ToolStripButton();
+            this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
+            this.nishuosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MainMenu.SuspendLayout();
             this.CTX_mainmenu.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.menuStrip2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -263,28 +282,194 @@ namespace MissionPlanner
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.menuStrip2);
             this.panel1.Controls.Add(this.menuStrip1);
             this.panel1.Controls.Add(this.MainMenu);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             this.panel1.MouseLeave += new System.EventHandler(this.MainMenu_MouseLeave);
             // 
+            // menuStrip2
+            // 
+            this.menuStrip2.BackgroundImage = global::MissionPlanner.Properties.Resources.bgdark;
+            this.menuStrip2.ContextMenuStrip = this.CTX_mainmenu;
+            resources.ApplyResources(this.menuStrip2, "menuStrip2");
+            this.menuStrip2.GripMargin = new System.Windows.Forms.Padding(0);
+            this.menuStrip2.ImageScalingSize = new System.Drawing.Size(0, 0);
+            this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.other_Stabilize,
+            this.other_Acro,
+            this.other_AltHold,
+            this.other_Guided,
+            this.other_Circle,
+            this.other_Land,
+            this.other_Drift,
+            this.other_Sport,
+            this.other_Flip,
+            this.other_AutoTune,
+            this.other_PosHold,
+            this.other_Brake,
+            this.other_Throw,
+            this.other_Avoid_ADSB,
+            this.other_Guided_NoGPS,
+            this.other_Smart_RTL});
+            this.menuStrip2.Name = "menuStrip2";
+            this.menuStrip2.ShowItemToolTips = true;
+            this.menuStrip2.Stretch = false;
+            // 
+            // other_Stabilize
+            // 
+            resources.ApplyResources(this.other_Stabilize, "other_Stabilize");
+            this.other_Stabilize.ForeColor = System.Drawing.Color.White;
+            this.other_Stabilize.Margin = new System.Windows.Forms.Padding(0);
+            this.other_Stabilize.Name = "other_Stabilize";
+            this.other_Stabilize.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
+            // 
+            // other_Acro
+            // 
+            resources.ApplyResources(this.other_Acro, "other_Acro");
+            this.other_Acro.ForeColor = System.Drawing.Color.White;
+            this.other_Acro.Margin = new System.Windows.Forms.Padding(0);
+            this.other_Acro.Name = "other_Acro";
+            this.other_Acro.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
+            // 
+            // other_AltHold
+            // 
+            resources.ApplyResources(this.other_AltHold, "other_AltHold");
+            this.other_AltHold.ForeColor = System.Drawing.Color.White;
+            this.other_AltHold.Margin = new System.Windows.Forms.Padding(0);
+            this.other_AltHold.Name = "other_AltHold";
+            this.other_AltHold.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
+            // 
+            // other_Guided
+            // 
+            resources.ApplyResources(this.other_Guided, "other_Guided");
+            this.other_Guided.ForeColor = System.Drawing.Color.White;
+            this.other_Guided.Margin = new System.Windows.Forms.Padding(0);
+            this.other_Guided.Name = "other_Guided";
+            this.other_Guided.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
+            // 
+            // other_Circle
+            // 
+            resources.ApplyResources(this.other_Circle, "other_Circle");
+            this.other_Circle.ForeColor = System.Drawing.Color.White;
+            this.other_Circle.Margin = new System.Windows.Forms.Padding(0);
+            this.other_Circle.Name = "other_Circle";
+            this.other_Circle.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
+            // 
+            // other_Land
+            // 
+            resources.ApplyResources(this.other_Land, "other_Land");
+            this.other_Land.ForeColor = System.Drawing.Color.White;
+            this.other_Land.Margin = new System.Windows.Forms.Padding(0);
+            this.other_Land.Name = "other_Land";
+            this.other_Land.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
+            // 
+            // other_Drift
+            // 
+            resources.ApplyResources(this.other_Drift, "other_Drift");
+            this.other_Drift.ForeColor = System.Drawing.Color.White;
+            this.other_Drift.Margin = new System.Windows.Forms.Padding(0);
+            this.other_Drift.Name = "other_Drift";
+            this.other_Drift.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
+            // 
+            // other_Sport
+            // 
+            resources.ApplyResources(this.other_Sport, "other_Sport");
+            this.other_Sport.ForeColor = System.Drawing.Color.White;
+            this.other_Sport.Margin = new System.Windows.Forms.Padding(0);
+            this.other_Sport.Name = "other_Sport";
+            this.other_Sport.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
+            // 
+            // other_Flip
+            // 
+            resources.ApplyResources(this.other_Flip, "other_Flip");
+            this.other_Flip.ForeColor = System.Drawing.Color.White;
+            this.other_Flip.Margin = new System.Windows.Forms.Padding(0);
+            this.other_Flip.Name = "other_Flip";
+            this.other_Flip.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
+            // 
+            // other_AutoTune
+            // 
+            resources.ApplyResources(this.other_AutoTune, "other_AutoTune");
+            this.other_AutoTune.ForeColor = System.Drawing.Color.White;
+            this.other_AutoTune.Margin = new System.Windows.Forms.Padding(0);
+            this.other_AutoTune.Name = "other_AutoTune";
+            this.other_AutoTune.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
+            // 
+            // other_PosHold
+            // 
+            resources.ApplyResources(this.other_PosHold, "other_PosHold");
+            this.other_PosHold.ForeColor = System.Drawing.Color.White;
+            this.other_PosHold.Margin = new System.Windows.Forms.Padding(0);
+            this.other_PosHold.Name = "other_PosHold";
+            this.other_PosHold.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
+            // 
+            // other_Brake
+            // 
+            resources.ApplyResources(this.other_Brake, "other_Brake");
+            this.other_Brake.ForeColor = System.Drawing.Color.White;
+            this.other_Brake.Margin = new System.Windows.Forms.Padding(0);
+            this.other_Brake.Name = "other_Brake";
+            this.other_Brake.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
+            // 
+            // other_Throw
+            // 
+            resources.ApplyResources(this.other_Throw, "other_Throw");
+            this.other_Throw.ForeColor = System.Drawing.Color.White;
+            this.other_Throw.Margin = new System.Windows.Forms.Padding(0);
+            this.other_Throw.Name = "other_Throw";
+            this.other_Throw.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
+            // 
+            // other_Avoid_ADSB
+            // 
+            resources.ApplyResources(this.other_Avoid_ADSB, "other_Avoid_ADSB");
+            this.other_Avoid_ADSB.ForeColor = System.Drawing.Color.White;
+            this.other_Avoid_ADSB.Margin = new System.Windows.Forms.Padding(0);
+            this.other_Avoid_ADSB.Name = "other_Avoid_ADSB";
+            this.other_Avoid_ADSB.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
+            // 
+            // other_Guided_NoGPS
+            // 
+            resources.ApplyResources(this.other_Guided_NoGPS, "other_Guided_NoGPS");
+            this.other_Guided_NoGPS.ForeColor = System.Drawing.Color.White;
+            this.other_Guided_NoGPS.Margin = new System.Windows.Forms.Padding(0);
+            this.other_Guided_NoGPS.Name = "other_Guided_NoGPS";
+            this.other_Guided_NoGPS.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
+            // 
+            // other_Smart_RTL
+            // 
+            resources.ApplyResources(this.other_Smart_RTL, "other_Smart_RTL");
+            this.other_Smart_RTL.ForeColor = System.Drawing.Color.White;
+            this.other_Smart_RTL.Margin = new System.Windows.Forms.Padding(0);
+            this.other_Smart_RTL.Name = "other_Smart_RTL";
+            this.other_Smart_RTL.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
+            // 
             // menuStrip1
             // 
-            resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.BackgroundImage = global::MissionPlanner.Properties.Resources.bgdark;
             this.menuStrip1.ContextMenuStrip = this.CTX_mainmenu;
             this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(0);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(0, 0);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menu_ARM,
             this.Menu_quickauto,
             this.Menu_quickmanual,
             this.menu_quickrtl,
-            this.menu_ARM,
             this.menu_othermode});
+            resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.ShowItemToolTips = true;
             this.menuStrip1.Stretch = false;
+            // 
+            // menu_ARM
+            // 
+            resources.ApplyResources(this.menu_ARM, "menu_ARM");
+            this.menu_ARM.ForeColor = System.Drawing.Color.White;
+            this.menu_ARM.Margin = new System.Windows.Forms.Padding(0);
+            this.menu_ARM.Name = "menu_ARM";
+            this.menu_ARM.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
+            this.menu_ARM.Click += new System.EventHandler(this.menu_ARM_Click);
             // 
             // Menu_quickauto
             // 
@@ -313,20 +498,6 @@ namespace MissionPlanner
             this.menu_quickrtl.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
             this.menu_quickrtl.Click += new System.EventHandler(this.menu_quickrtl_Click);
             // 
-            // menu_ARM
-            // 
-            resources.ApplyResources(this.menu_ARM, "menu_ARM");
-            this.menu_ARM.ForeColor = System.Drawing.Color.White;
-            this.menu_ARM.Margin = new System.Windows.Forms.Padding(0);
-            this.menu_ARM.Name = "menu_ARM";
-            this.menu_ARM.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
-            this.menu_ARM.Click += new System.EventHandler(this.menu_ARM_Click);
-            // 
-            // toolStripTextBox1
-            // 
-            this.toolStripTextBox1.Name = "toolStripTextBox1";
-            resources.ApplyResources(this.toolStripTextBox1, "toolStripTextBox1");
-            // 
             // menu_othermode
             // 
             resources.ApplyResources(this.menu_othermode, "menu_othermode");
@@ -335,6 +506,16 @@ namespace MissionPlanner
             this.menu_othermode.Name = "menu_othermode";
             this.menu_othermode.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
             this.menu_othermode.Click += new System.EventHandler(this.menu_othermode_Click);
+            // 
+            // toolStripTextBox1
+            // 
+            this.toolStripTextBox1.Name = "toolStripTextBox1";
+            resources.ApplyResources(this.toolStripTextBox1, "toolStripTextBox1");
+            // 
+            // nishuosToolStripMenuItem
+            // 
+            this.nishuosToolStripMenuItem.Name = "nishuosToolStripMenuItem";
+            resources.ApplyResources(this.nishuosToolStripMenuItem, "nishuosToolStripMenuItem");
             // 
             // MainV2
             // 
@@ -352,6 +533,8 @@ namespace MissionPlanner
             this.CTX_mainmenu.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.menuStrip2.ResumeLayout(false);
+            this.menuStrip2.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -389,5 +572,23 @@ namespace MissionPlanner
         public System.Windows.Forms.ToolStripButton menu_quickrtl;
         public System.Windows.Forms.ToolStripButton menu_ARM;
         public System.Windows.Forms.ToolStripButton menu_othermode;
+        private System.Windows.Forms.ToolStripMenuItem nishuosToolStripMenuItem;
+        public System.Windows.Forms.MenuStrip menuStrip2;
+        public System.Windows.Forms.ToolStripButton other_Stabilize;
+        public System.Windows.Forms.ToolStripButton other_Acro;
+        public System.Windows.Forms.ToolStripButton other_AltHold;
+        public System.Windows.Forms.ToolStripButton other_Guided;
+        public System.Windows.Forms.ToolStripButton other_Circle;
+        public System.Windows.Forms.ToolStripButton other_Land;
+        public System.Windows.Forms.ToolStripButton other_Drift;
+        public System.Windows.Forms.ToolStripButton other_Sport;
+        public System.Windows.Forms.ToolStripButton other_Flip;
+        public System.Windows.Forms.ToolStripButton other_AutoTune;
+        public System.Windows.Forms.ToolStripButton other_PosHold;
+        public System.Windows.Forms.ToolStripButton other_Brake;
+        public System.Windows.Forms.ToolStripButton other_Throw;
+        public System.Windows.Forms.ToolStripButton other_Avoid_ADSB;
+        public System.Windows.Forms.ToolStripButton other_Guided_NoGPS;
+        public System.Windows.Forms.ToolStripButton other_Smart_RTL;
     }
 }

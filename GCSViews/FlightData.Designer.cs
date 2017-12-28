@@ -8,8 +8,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FlightData));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.contextMenuStripHud = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.videoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.recordHudToAVIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -97,6 +97,7 @@
             this.tabActionsSimple = new System.Windows.Forms.TabPage();
             this.tabPagePreFlight = new System.Windows.Forms.TabPage();
             this.tabGauges = new System.Windows.Forms.TabPage();
+            this.menuStrip3 = new System.Windows.Forms.MenuStrip();
             this.tabStatus = new System.Windows.Forms.TabPage();
             this.tabServo = new System.Windows.Forms.TabPage();
             this.flowLayoutPanelServos = new System.Windows.Forms.FlowLayoutPanel();
@@ -148,7 +149,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.coords1 = new MissionPlanner.Controls.Coords();
             this.label1 = new MissionPlanner.Controls.MyLabel();
-            this.menuStrip3 = new System.Windows.Forms.MenuStrip();
             this.bindingSourceHud = new System.Windows.Forms.BindingSource(this.components);
             this.bindingSourceGaugesTab = new System.Windows.Forms.BindingSource(this.components);
             this.bindingSourceQuickTab = new System.Windows.Forms.BindingSource(this.components);
@@ -855,8 +855,8 @@
             // 
             // dataGridViewImageColumn1
             // 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewImageColumn1.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewImageColumn1.DefaultCellStyle = dataGridViewCellStyle1;
             resources.ApplyResources(this.dataGridViewImageColumn1, "dataGridViewImageColumn1");
             this.dataGridViewImageColumn1.Image = global::MissionPlanner.Properties.Resources.up;
             this.dataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
@@ -864,8 +864,8 @@
             // 
             // dataGridViewImageColumn2
             // 
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewImageColumn2.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewImageColumn2.DefaultCellStyle = dataGridViewCellStyle2;
             resources.ApplyResources(this.dataGridViewImageColumn2, "dataGridViewImageColumn2");
             this.dataGridViewImageColumn2.Image = global::MissionPlanner.Properties.Resources.down;
             this.dataGridViewImageColumn2.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
@@ -1516,6 +1516,16 @@
             this.tabGauges.Name = "tabGauges";
             this.tabGauges.Resize += new System.EventHandler(this.tabPage1_Resize);
             // 
+            // menuStrip3
+            // 
+            resources.ApplyResources(this.menuStrip3, "menuStrip3");
+            this.menuStrip3.BackColor = System.Drawing.Color.Transparent;
+            this.menuStrip3.GripMargin = new System.Windows.Forms.Padding(0);
+            this.menuStrip3.ImageScalingSize = new System.Drawing.Size(0, 0);
+            this.menuStrip3.Name = "menuStrip3";
+            this.menuStrip3.ShowItemToolTips = true;
+            this.menuStrip3.Stretch = false;
+            // 
             // tabStatus
             // 
             resources.ApplyResources(this.tabStatus, "tabStatus");
@@ -2028,16 +2038,6 @@
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
             this.label1.resize = false;
-            // 
-            // menuStrip3
-            // 
-            resources.ApplyResources(this.menuStrip3, "menuStrip3");
-            this.menuStrip3.BackColor = System.Drawing.Color.Transparent;
-            this.menuStrip3.GripMargin = new System.Windows.Forms.Padding(0);
-            this.menuStrip3.ImageScalingSize = new System.Drawing.Size(0, 0);
-            this.menuStrip3.Name = "menuStrip3";
-            this.menuStrip3.ShowItemToolTips = true;
-            this.menuStrip3.Stretch = false;
             // 
             // bindingSourceHud
             // 

@@ -997,6 +997,32 @@ namespace MissionPlanner
 
             // save config to test we have write access
             SaveConfig();
+
+
+
+            //海帆添加20171228：使得窗口打开的时候隐藏menustrip2
+            hide_menustrip2();
+            //海帆添加20171228：添加选择“其他模式”的时候的点击事件
+            other_Stabilize.Click += othermode_click_function;
+            other_Acro.Click += othermode_click_function;
+            other_AltHold.Click += othermode_click_function;
+            other_Guided.Click += othermode_click_function;
+            other_Circle.Click += othermode_click_function;
+            other_Land.Click += othermode_click_function;
+            other_Drift.Click += othermode_click_function;
+            other_Sport.Click += othermode_click_function;
+            other_Flip.Click += othermode_click_function;
+            other_AutoTune.Click += othermode_click_function;
+            other_PosHold.Click += othermode_click_function;
+            other_Brake.Click += othermode_click_function;
+            other_Throw.Click += othermode_click_function;
+            other_Avoid_ADSB.Click += othermode_click_function;
+            other_Guided_NoGPS.Click += othermode_click_function;
+            other_Smart_RTL.Click += othermode_click_function;
+
+
+
+
         }
 
         void cmb_sysid_Click(object sender, EventArgs e)
@@ -3230,6 +3256,9 @@ namespace MissionPlanner
                 log.Info("myview width " + MyView.Width + " height " + MyView.Height);
 
             log.Info("this   width " + this.Width + " height " + this.Height);
+
+            //海帆添加20171228：使得窗口大小变化的时候隐藏选择其他模式
+            hide_menustrip2();
         }
 
         private void MenuHelp_Click(object sender, EventArgs e)
@@ -3919,9 +3948,27 @@ namespace MissionPlanner
             FlightData.BUT_ARM_Click(sender, e);
             hide_menustrip2();
         }
+        
 
-        private void menu_othermode_Click(object sender, EventArgs e)
+        //海帆添加20171228：隐藏选项2
+        private void hide_menustrip2() {
+            menuStrip2.Visible = false;
+            panel1.Height = 138;
+
+            foreach (ToolStripButton button_temp in menuStrip2.Items) {
+                button_temp.Visible = false;
+            }
+
+
+        }
+
+
+        //海帆添加20171228：按下其他模式按钮时候的触发
+        private void menu_othermode_Click_1(object sender, EventArgs e)
         {
+            //海帆添加20171228：更新其他模式的控件源
+            FlightData.CMB_modes.DataSource = Common.getModesList(MainV2.comPort.MAV.cs);
+
             panel1.Height = 207;
             menuStrip2.Visible = true;
             //海帆添加20171228：添加选择其他模式的时候的显示菜单
@@ -3934,7 +3981,8 @@ namespace MissionPlanner
                 msg_temp = msg_temp.Replace("]", "");
                 msg_temp = msg_temp.Replace(",", "");
                 msg_temp = msg_temp.Trim();
-                switch (msg_temp) {
+                switch (msg_temp)
+                {
                     case "Stabilize":
                         other_Stabilize.Visible = true;
                         break;
@@ -3985,17 +4033,25 @@ namespace MissionPlanner
                         break;
                 }
             }
-            
-
-
 
         }
 
-        //海帆添加20171228：隐藏选项2
-        private void hide_menustrip2() {
-            menuStrip2.Visible = false;
-            panel1.Height = 138;
+
+        //海帆添加20171228：选择其他模式的时候触发的函数
+        void othermode_click_function(object sender, EventArgs e)
+        {
+            ToolStripButton other_mode_button = (ToolStripButton)sender;
+            string other_mode_button_name = other_mode_button.Name.Replace("other_","");
+            if (MainV2.comPort.MAV.cs.failsafe)
+            {
+                if (CustomMessageBox.Show("You are in failsafe, are you sure?", "Failsafe", MessageBoxButtons.YesNo) != DialogResult.Yes)
+                {
+                    return;
+                }
+            }
+            MainV2.comPort.setMode(other_mode_button_name);
         }
+
 
     }
 }

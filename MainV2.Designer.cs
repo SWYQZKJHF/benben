@@ -77,9 +77,9 @@ namespace MissionPlanner
             this.Menu_quickauto = new System.Windows.Forms.ToolStripButton();
             this.Menu_quickmanual = new System.Windows.Forms.ToolStripButton();
             this.menu_quickrtl = new System.Windows.Forms.ToolStripButton();
-            this.menu_othermode = new System.Windows.Forms.ToolStripButton();
             this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
             this.nishuosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menu_othermode = new System.Windows.Forms.ToolStripButton();
             this.MainMenu.SuspendLayout();
             this.CTX_mainmenu.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -498,15 +498,6 @@ namespace MissionPlanner
             this.menu_quickrtl.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
             this.menu_quickrtl.Click += new System.EventHandler(this.menu_quickrtl_Click);
             // 
-            // menu_othermode
-            // 
-            resources.ApplyResources(this.menu_othermode, "menu_othermode");
-            this.menu_othermode.ForeColor = System.Drawing.Color.White;
-            this.menu_othermode.Margin = new System.Windows.Forms.Padding(0);
-            this.menu_othermode.Name = "menu_othermode";
-            this.menu_othermode.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
-            this.menu_othermode.Click += new System.EventHandler(this.menu_othermode_Click);
-            // 
             // toolStripTextBox1
             // 
             this.toolStripTextBox1.Name = "toolStripTextBox1";
@@ -516,6 +507,15 @@ namespace MissionPlanner
             // 
             this.nishuosToolStripMenuItem.Name = "nishuosToolStripMenuItem";
             resources.ApplyResources(this.nishuosToolStripMenuItem, "nishuosToolStripMenuItem");
+            // 
+            // menu_othermode
+            // 
+            resources.ApplyResources(this.menu_othermode, "menu_othermode");
+            this.menu_othermode.ForeColor = System.Drawing.Color.White;
+            this.menu_othermode.Margin = new System.Windows.Forms.Padding(0);
+            this.menu_othermode.Name = "menu_othermode";
+            this.menu_othermode.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
+            this.menu_othermode.Click += new System.EventHandler(this.menu_othermode_Click_1);
             // 
             // MainV2
             // 
@@ -571,7 +571,6 @@ namespace MissionPlanner
         public System.Windows.Forms.ToolStripButton Menu_quickmanual;
         public System.Windows.Forms.ToolStripButton menu_quickrtl;
         public System.Windows.Forms.ToolStripButton menu_ARM;
-        public System.Windows.Forms.ToolStripButton menu_othermode;
         private System.Windows.Forms.ToolStripMenuItem nishuosToolStripMenuItem;
         public System.Windows.Forms.MenuStrip menuStrip2;
         public System.Windows.Forms.ToolStripButton other_Stabilize;
@@ -590,5 +589,6 @@ namespace MissionPlanner
         public System.Windows.Forms.ToolStripButton other_Avoid_ADSB;
         public System.Windows.Forms.ToolStripButton other_Guided_NoGPS;
         public System.Windows.Forms.ToolStripButton other_Smart_RTL;
+        public System.Windows.Forms.ToolStripButton menu_othermode;
     }
 }

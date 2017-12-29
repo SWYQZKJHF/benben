@@ -240,6 +240,12 @@
   </ItemGroup>
 
     <ItemGroup>
+    <Compile Include="Engineering_mode_form.cs">
+      <SubType>Control</SubType>
+    </Compile>
+    <Compile Include="Engineering_mode_form.Designer.cs">
+      <DependentUpon>Engineering_mode_form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Antenna\Tracker.Designer.cs" />
     <Compile Include="CodeGen.cs" />
     <Compile Include="Common.cs" />
@@ -705,6 +711,9 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Engineering_mode_form.resx">
+      <DependentUpon>Engineering_mode_form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ConnectionOptions.resx"><DependentUpon>ConnectionOptions.cs</DependentUpon> </EmbeddedResource>
     <EmbeddedResource Include="ConnectionOptions.ar.resx"><DependentUpon>ConnectionOptions.cs</DependentUpon> </EmbeddedResource>
     <EmbeddedResource Include="ConnectionOptions.az-Latn-AZ.resx"><DependentUpon>ConnectionOptions.cs</DependentUpon> </EmbeddedResource>

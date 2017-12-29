@@ -1025,7 +1025,7 @@ namespace MissionPlanner
             BUT_PREFLIGHT_REBOOT_SHUTDOWN.Click += BUTactiondo_click_function;
             BUT_Trigger_Camera_NOW.Click += BUTactiondo_click_function;
 
-            
+
 
         }
 
@@ -1277,8 +1277,7 @@ namespace MissionPlanner
             FlightData.tabControlactions.TabPages.Remove(FlightData.tablogbrowse);        //移除数据闪存日志
             FlightData.tabControlactions.TabPages.Remove(FlightData.tabActions);        //移除动作
 
-
-
+            
             MyView.ShowScreen("FlightData");
             //海帆添加20171229：隐藏menustrip2
             hide_menustrip2();
@@ -3925,29 +3924,31 @@ namespace MissionPlanner
                 //);
             }
         }
-
-        //海帆增加20171227：外部触发工程模式
-        public bool Engineering_mode = false;
-
-        //海帆增加20171227：外部触发工程模式
+        
+        //海帆增加20171229：外部触发工程模式
         private void MenuEngineering_Click(object sender, EventArgs e)
         {
-            MyView.ShowScreen("FlightData");
-            //海帆添加20171229：隐藏menustrip2
             hide_menustrip2();
-            if (Engineering_mode == false)
+            if (MenuConfigTune.Visible == false)
             {
-                MenuConfigTune.Visible = true;
-                MenuInitConfig.Visible = true;
-                Engineering_mode = true;
+                Engineering_mode_form Engineering_mode_form_my = new Engineering_mode_form();
+                Engineering_mode_form_my.ShowDialog();
+                if (Engineering_mode_form_my.open_engineering_mode == true)
+                {
+                    MenuConfigTune.Visible = true;
+                    MenuInitConfig.Visible = true;
+                }
             }
             else {
-                MenuConfigTune.Visible = false;
-                MenuInitConfig.Visible = false;
-                Engineering_mode = false;
+                if (CustomMessageBox.Show("Are you sure to close the Engineering Mode?", "",
+                    MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    MyView.ShowScreen("FlightData");
+                    MenuConfigTune.Visible = false;
+                    MenuInitConfig.Visible = false;
+                }
             }
         }
-
 
         //海帆添加20171227：菜单栏自动模式的代码
         private void Menu_quickauto_Click(object sender, EventArgs e)

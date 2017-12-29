@@ -73,7 +73,6 @@ namespace MissionPlanner
             this.other_Avoid_ADSB = new System.Windows.Forms.ToolStripButton();
             this.other_Guided_NoGPS = new System.Windows.Forms.ToolStripButton();
             this.other_Smart_RTL = new System.Windows.Forms.ToolStripButton();
-            this.BUT_LOITER_UNLIM = new System.Windows.Forms.ToolStripButton();
             this.BUT_RETURN_TO_LAUNCH = new System.Windows.Forms.ToolStripButton();
             this.BUT_PREFLIGHT_CALIBRATION = new System.Windows.Forms.ToolStripButton();
             this.BUT_MISSION_START = new System.Windows.Forms.ToolStripButton();
@@ -85,12 +84,16 @@ namespace MissionPlanner
             this.LB_BUT_bintolog = new System.Windows.Forms.ToolStripButton();
             this.LB_BUT_loganalysis = new System.Windows.Forms.ToolStripButton();
             this.LB_BUT_matlab = new System.Windows.Forms.ToolStripButton();
+            this.menu_CMB_setwp = new System.Windows.Forms.ToolStripComboBox();
+            this.menu_BUT_setwp = new System.Windows.Forms.ToolStripButton();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menu_ARM = new System.Windows.Forms.ToolStripButton();
             this.Menu_quickauto = new System.Windows.Forms.ToolStripButton();
             this.Menu_quickmanual = new System.Windows.Forms.ToolStripButton();
             this.menu_quickrtl = new System.Windows.Forms.ToolStripButton();
             this.menu_othermode = new System.Windows.Forms.ToolStripButton();
+            this.BUT_LOITER_UNLIM = new System.Windows.Forms.ToolStripButton();
+            this.menu_Set_waypoint = new System.Windows.Forms.ToolStripButton();
             this.menu_BUTactiondo = new System.Windows.Forms.ToolStripButton();
             this.menu_BUT_clear_track = new System.Windows.Forms.ToolStripButton();
             this.menu_BUT_resumemis = new System.Windows.Forms.ToolStripButton();
@@ -340,7 +343,6 @@ namespace MissionPlanner
             this.other_Avoid_ADSB,
             this.other_Guided_NoGPS,
             this.other_Smart_RTL,
-            this.BUT_LOITER_UNLIM,
             this.BUT_RETURN_TO_LAUNCH,
             this.BUT_PREFLIGHT_CALIBRATION,
             this.BUT_MISSION_START,
@@ -351,7 +353,9 @@ namespace MissionPlanner
             this.LB_BUT_logbrowse,
             this.LB_BUT_bintolog,
             this.LB_BUT_loganalysis,
-            this.LB_BUT_matlab});
+            this.LB_BUT_matlab,
+            this.menu_CMB_setwp,
+            this.menu_BUT_setwp});
             this.menuStrip2.Name = "menuStrip2";
             this.menuStrip2.ShowItemToolTips = true;
             this.menuStrip2.Stretch = false;
@@ -484,14 +488,6 @@ namespace MissionPlanner
             this.other_Smart_RTL.Name = "other_Smart_RTL";
             this.other_Smart_RTL.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
             // 
-            // BUT_LOITER_UNLIM
-            // 
-            resources.ApplyResources(this.BUT_LOITER_UNLIM, "BUT_LOITER_UNLIM");
-            this.BUT_LOITER_UNLIM.ForeColor = System.Drawing.Color.White;
-            this.BUT_LOITER_UNLIM.Margin = new System.Windows.Forms.Padding(0);
-            this.BUT_LOITER_UNLIM.Name = "BUT_LOITER_UNLIM";
-            this.BUT_LOITER_UNLIM.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
-            // 
             // BUT_RETURN_TO_LAUNCH
             // 
             resources.ApplyResources(this.BUT_RETURN_TO_LAUNCH, "BUT_RETURN_TO_LAUNCH");
@@ -586,6 +582,21 @@ namespace MissionPlanner
             this.LB_BUT_matlab.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
             this.LB_BUT_matlab.Click += new System.EventHandler(this.LB_BUT_matlab_Click);
             // 
+            // menu_CMB_setwp
+            // 
+            this.menu_CMB_setwp.Name = "menu_CMB_setwp";
+            resources.ApplyResources(this.menu_CMB_setwp, "menu_CMB_setwp");
+            this.menu_CMB_setwp.Click += new System.EventHandler(this.menu_CMB_setwp_Click);
+            // 
+            // menu_BUT_setwp
+            // 
+            resources.ApplyResources(this.menu_BUT_setwp, "menu_BUT_setwp");
+            this.menu_BUT_setwp.ForeColor = System.Drawing.Color.White;
+            this.menu_BUT_setwp.Margin = new System.Windows.Forms.Padding(0);
+            this.menu_BUT_setwp.Name = "menu_BUT_setwp";
+            this.menu_BUT_setwp.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
+            this.menu_BUT_setwp.Click += new System.EventHandler(this.menu_BUT_setwp_Click);
+            // 
             // menuStrip1
             // 
             this.menuStrip1.BackgroundImage = global::MissionPlanner.Properties.Resources.bgdark;
@@ -598,6 +609,8 @@ namespace MissionPlanner
             this.Menu_quickmanual,
             this.menu_quickrtl,
             this.menu_othermode,
+            this.BUT_LOITER_UNLIM,
+            this.menu_Set_waypoint,
             this.menu_BUTactiondo,
             this.menu_BUT_clear_track,
             this.menu_BUT_resumemis,
@@ -651,6 +664,23 @@ namespace MissionPlanner
             this.menu_othermode.Name = "menu_othermode";
             this.menu_othermode.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
             this.menu_othermode.Click += new System.EventHandler(this.menu_othermode_Click_1);
+            // 
+            // BUT_LOITER_UNLIM
+            // 
+            resources.ApplyResources(this.BUT_LOITER_UNLIM, "BUT_LOITER_UNLIM");
+            this.BUT_LOITER_UNLIM.ForeColor = System.Drawing.Color.White;
+            this.BUT_LOITER_UNLIM.Margin = new System.Windows.Forms.Padding(0);
+            this.BUT_LOITER_UNLIM.Name = "BUT_LOITER_UNLIM";
+            this.BUT_LOITER_UNLIM.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
+            // 
+            // menu_Set_waypoint
+            // 
+            resources.ApplyResources(this.menu_Set_waypoint, "menu_Set_waypoint");
+            this.menu_Set_waypoint.ForeColor = System.Drawing.Color.White;
+            this.menu_Set_waypoint.Margin = new System.Windows.Forms.Padding(0);
+            this.menu_Set_waypoint.Name = "menu_Set_waypoint";
+            this.menu_Set_waypoint.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
+            this.menu_Set_waypoint.Click += new System.EventHandler(this.menu_Set_waypoint_Click);
             // 
             // menu_BUTactiondo
             // 
@@ -773,7 +803,6 @@ namespace MissionPlanner
         public System.Windows.Forms.ToolStripButton menu_othermode;
         public System.Windows.Forms.ToolStripButton menu_BUTactiondo;
         public System.Windows.Forms.ToolStripButton BUT_Trigger_Camera_NOW;
-        public System.Windows.Forms.ToolStripButton BUT_LOITER_UNLIM;
         public System.Windows.Forms.ToolStripButton BUT_RETURN_TO_LAUNCH;
         public System.Windows.Forms.ToolStripButton BUT_PREFLIGHT_CALIBRATION;
         public System.Windows.Forms.ToolStripButton BUT_MISSION_START;
@@ -788,5 +817,9 @@ namespace MissionPlanner
         public System.Windows.Forms.ToolStripButton LB_BUT_bintolog;
         public System.Windows.Forms.ToolStripButton LB_BUT_loganalysis;
         public System.Windows.Forms.ToolStripButton LB_BUT_matlab;
+        private System.Windows.Forms.ToolStripComboBox menu_CMB_setwp;
+        public System.Windows.Forms.ToolStripButton menu_Set_waypoint;
+        public System.Windows.Forms.ToolStripButton menu_BUT_setwp;
+        public System.Windows.Forms.ToolStripButton BUT_LOITER_UNLIM;
     }
 }

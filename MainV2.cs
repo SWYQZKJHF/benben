@@ -1275,6 +1275,7 @@ namespace MissionPlanner
             FlightData.tabControlactions.TabPages.Remove(FlightData.tabTLogs);        //移除摇杆日志
             FlightData.tabControlactions.TabPages.Remove(FlightData.tabScripts);        //移除脚本
             FlightData.tabControlactions.TabPages.Remove(FlightData.tablogbrowse);        //移除数据闪存日志
+            FlightData.tabControlactions.TabPages.Remove(FlightData.tabActions);        //移除动作
 
 
 
@@ -3982,14 +3983,15 @@ namespace MissionPlanner
             menuStrip2.Visible = false;
             panel1.Height = 148;
 
-            foreach (ToolStripButton button_temp in menuStrip2.Items) {
+            foreach (ToolStripItem button_temp in menuStrip2.Items) {
                 button_temp.Visible = false;
             }
+
         }
 
         //海帆添加20171228：展开选项2
         private void show_menustrip2() {
-            foreach (ToolStripButton button_temp in menuStrip2.Items)
+            foreach (ToolStripItem button_temp in menuStrip2.Items)
             {
                 button_temp.Visible = false;
             }
@@ -4093,7 +4095,6 @@ namespace MissionPlanner
             show_menustrip2();
 
             //选择显示什么操作
-            BUT_LOITER_UNLIM.Visible = true;
             BUT_RETURN_TO_LAUNCH.Visible = true;
             BUT_PREFLIGHT_CALIBRATION.Visible = true;
             BUT_MISSION_START.Visible = true;
@@ -4197,6 +4198,80 @@ namespace MissionPlanner
         {
             FlightData.BUT_matlab_Click(sender, e);
         }
-        
+
+
+        //海帆添加20171229：点击选择航点的时候对话框的选项
+        private void menu_CMB_setwp_Click(object sender, EventArgs e)
+        {
+            menu_CMB_setwp.Items.Clear();
+
+            menu_CMB_setwp.Items.Add("0 (Home)");
+
+            if (MainV2.comPort.MAV.param["CMD_TOTAL"] != null)
+            {
+                int wps = int.Parse(MainV2.comPort.MAV.param["CMD_TOTAL"].ToString());
+                for (int z = 1; z <= wps; z++)
+                {
+                    menu_CMB_setwp.Items.Add(z.ToString());
+                }
+                return;
+            }
+
+            if (MainV2.comPort.MAV.param["WP_TOTAL"] != null)
+            {
+                int wps = int.Parse(MainV2.comPort.MAV.param["WP_TOTAL"].ToString());
+                for (int z = 1; z <= wps; z++)
+                {
+                    menu_CMB_setwp.Items.Add(z.ToString());
+                }
+                return;
+            }
+
+            if (MainV2.comPort.MAV.param["MIS_TOTAL"] != null)
+            {
+                int wps = int.Parse(MainV2.comPort.MAV.param["MIS_TOTAL"].ToString());
+                for (int z = 1; z <= wps; z++)
+                {
+                    menu_CMB_setwp.Items.Add(z.ToString());
+                }
+                return;
+            }
+
+            if (MainV2.comPort.MAV.wps.Count > 0)
+            {
+                int wps = MainV2.comPort.MAV.wps.Count;
+                for (int z = 1; z <= wps; z++)
+                {
+                    menu_CMB_setwp.Items.Add(z.ToString());
+                }
+                return;
+            }
+        }
+
+        //海帆添加20171229：设置航点模式
+        private void menu_Set_waypoint_Click(object sender, EventArgs e)
+        {
+            show_menustrip2();
+            menu_CMB_setwp.Items.Clear();
+            menu_CMB_setwp.Items.Add("0 (Home)");
+            menu_CMB_setwp.SelectedIndex = 0;
+            menu_CMB_setwp.Visible = true;
+            menu_BUT_setwp.Visible = true;
+        }
+
+        //海帆添加20171229：点击选择航点
+        private void menu_BUT_setwp_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ((ToolStripButton)sender).Enabled = false;
+                MainV2.comPort.setWPCurrent((ushort)menu_CMB_setwp.SelectedIndex); // set nav to
+            }
+            catch
+            {
+                CustomMessageBox.Show(Strings.CommandFailed, Strings.ERROR);
+            }
+            ((ToolStripButton)sender).Enabled = true;
+        }
     }
 }

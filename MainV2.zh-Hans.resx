@@ -210,6 +210,9 @@
   <data name="menu_tablogbrowse.Text" xml:space="preserve">
     <value>数据闪存日志</value>
   </data>
+  <data name="BUT_LOITER_UNLIM.Text" xml:space="preserve">
+    <value>留待动作</value>
+  </data>
   <data name="LB_BUT_bintolog.Text" xml:space="preserve">
     <value>PX4 .Bin转.Log</value>
   </data>
@@ -227,5 +230,11 @@
   </data>
   <data name="LB_BUT_matlab.Text" xml:space="preserve">
     <value>创建MATLAB文件</value>
+  </data>
+  <data name="menu_BUT_setwp.Text" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="menu_Set_waypoint.Text" xml:space="preserve">
+    <value>设置航点</value>
   </data>
 </root>

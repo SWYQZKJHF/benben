@@ -2482,7 +2482,7 @@ namespace MissionPlanner.GCSViews
             ((Button) sender).Enabled = true;
         }
 
-        private void CMB_setwp_Click(object sender, EventArgs e)
+        public void CMB_setwp_Click(object sender, EventArgs e)
         {
             CMB_setwp.Items.Clear();
 
@@ -4388,6 +4388,8 @@ namespace MissionPlanner.GCSViews
             tabControlactions.TabPages.Remove(tabTLogs);        //移除摇杆日志
             tabControlactions.TabPages.Remove(tabScripts);        //移除脚本
             tabControlactions.TabPages.Remove(tablogbrowse);        //移除数据闪存日志
+            tabControlactions.TabPages.Remove(tabActions);        //移除动作
+            
 
 
 

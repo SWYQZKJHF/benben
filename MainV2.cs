@@ -1267,16 +1267,34 @@ namespace MissionPlanner
 
         private void MenuFlightData_Click(object sender, EventArgs e)
         {
+            //海帆添加20171229：隐藏选项卡
+            FlightData.tabControlactions.TabPages.Remove(FlightData.tabGauges);   //移除仪表盘
+            FlightData.tabControlactions.TabPages.Remove(FlightData.tabStatus);   //移除状态
+            FlightData.tabControlactions.TabPages.Remove(FlightData.tabServo);    //移除舵机
+            FlightData.tabControlactions.TabPages.Remove(FlightData.tabPagePreFlight);        //移除起飞前检查
+            FlightData.tabControlactions.TabPages.Remove(FlightData.tabTLogs);        //移除摇杆日志
+            FlightData.tabControlactions.TabPages.Remove(FlightData.tabScripts);        //移除脚本
+            FlightData.tabControlactions.TabPages.Remove(FlightData.tablogbrowse);        //移除数据闪存日志
+
+
+
             MyView.ShowScreen("FlightData");
+            //海帆添加20171229：隐藏menustrip2
+            hide_menustrip2();
         }
 
         private void MenuFlightPlanner_Click(object sender, EventArgs e)
         {
             MyView.ShowScreen("FlightPlanner");
+            //海帆添加20171229：隐藏menustrip2
+            hide_menustrip2();
         }
 
         public void MenuSetup_Click(object sender, EventArgs e)
         {
+            //海帆添加20171229：隐藏menustrip2
+            hide_menustrip2();
+
             if (Settings.Instance.GetBoolean("password_protect") == false)
             {
                 MyView.ShowScreen("HWConfig");
@@ -1297,6 +1315,9 @@ namespace MissionPlanner
 
         private void MenuTuning_Click(object sender, EventArgs e)
         {
+
+            //海帆添加20171229：隐藏menustrip2
+            hide_menustrip2();
             if (Settings.Instance.GetBoolean("password_protect") == false)
             {
                 MyView.ShowScreen("SWConfig");
@@ -3910,7 +3931,9 @@ namespace MissionPlanner
         //海帆增加20171227：外部触发工程模式
         private void MenuEngineering_Click(object sender, EventArgs e)
         {
-            
+            MyView.ShowScreen("FlightData");
+            //海帆添加20171229：隐藏menustrip2
+            hide_menustrip2();
             if (Engineering_mode == false)
             {
                 MenuConfigTune.Visible = true;
@@ -3957,7 +3980,7 @@ namespace MissionPlanner
         //海帆添加20171228：隐藏选项2
         private void hide_menustrip2() {
             menuStrip2.Visible = false;
-            panel1.Height = 138;
+            panel1.Height = 148;
 
             foreach (ToolStripButton button_temp in menuStrip2.Items) {
                 button_temp.Visible = false;
@@ -3971,7 +3994,7 @@ namespace MissionPlanner
                 button_temp.Visible = false;
             }
 
-            panel1.Height = 207;
+            panel1.Height = 222;
             menuStrip2.Visible = true;
 
         }
@@ -4127,6 +4150,53 @@ namespace MissionPlanner
             MainV2.comPort.doAbortLand();
         }
 
+        //海帆添加20171229：数据闪存日志点击事件
+        private void menu_tablogbrowse_Click(object sender, EventArgs e)
+        {
+            show_menustrip2();
+            LB_BUT_DFMavlink.Visible = true;
+            LB_BUT_dflogtokml.Visible = true;
+            LB_BUT_logbrowse.Visible = true;
+            LB_BUT_bintolog.Visible = true;
+            LB_BUT_loganalysis.Visible = true;
+            LB_BUT_matlab.Visible = true;
+        }
 
+        //海帆添加20171229：通过MavLink下载闪存日志
+        private void LB_BUT_DFMavlink_Click(object sender, EventArgs e)
+        {
+            FlightData.BUT_DFMavlink_Click(sender, e);
+        }
+
+        //海帆添加20171229：创建KML+gpx
+        private void LB_BUT_dflogtokml_Click(object sender, EventArgs e)
+        {
+            FlightData.but_dflogtokml_Click(sender, e);
+        }
+
+        //海帆添加20171229：回顾日志
+        private void LB_BUT_logbrowse_Click(object sender, EventArgs e)
+        {
+            FlightData.BUT_logbrowse_Click(sender, e);
+        }
+
+        //海帆添加20171229：PX4 .Bin转.Log
+        private void LB_BUT_bintolog_Click(object sender, EventArgs e)
+        {
+            FlightData.but_bintolog_Click(sender, e);
+        }
+
+        //海帆添加20171229：自动分析
+        private void LB_BUT_loganalysis_Click(object sender, EventArgs e)
+        {
+            FlightData.BUT_loganalysis_Click(sender, e);
+        }
+
+        //海帆添加20171229：创建MATLAB文件
+        private void LB_BUT_matlab_Click(object sender, EventArgs e)
+        {
+            FlightData.BUT_matlab_Click(sender, e);
+        }
+        
     }
 }

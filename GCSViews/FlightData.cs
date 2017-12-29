@@ -3680,7 +3680,7 @@ namespace MissionPlanner.GCSViews
             lbl_playbackspeed.Text = "x " + LogPlayBackSpeed;
         }
 
-        private void BUT_logbrowse_Click(object sender, EventArgs e)
+        public void BUT_logbrowse_Click(object sender, EventArgs e)
         {
             Form logbrowse = new LogBrowse();
             ThemeManager.ApplyThemeTo(logbrowse);
@@ -3814,7 +3814,7 @@ namespace MissionPlanner.GCSViews
             }
         }
 
-        private void BUT_matlab_Click(object sender, EventArgs e)
+        public void BUT_matlab_Click(object sender, EventArgs e)
         {
             MatLab.ProcessLog();
         }
@@ -3840,7 +3840,7 @@ namespace MissionPlanner.GCSViews
             }
         }
 
-        private void but_bintolog_Click(object sender, EventArgs e)
+        public void but_bintolog_Click(object sender, EventArgs e)
         {
             using (OpenFileDialog ofd = new OpenFileDialog())
             {
@@ -3859,7 +3859,7 @@ namespace MissionPlanner.GCSViews
             }
         }
 
-        private void but_dflogtokml_Click(object sender, EventArgs e)
+        public void but_dflogtokml_Click(object sender, EventArgs e)
         {
             using (OpenFileDialog openFileDialog1 = new OpenFileDialog())
             {
@@ -3928,7 +3928,7 @@ namespace MissionPlanner.GCSViews
             }
         }
 
-        private void BUT_DFMavlink_Click(object sender, EventArgs e)
+        public void BUT_DFMavlink_Click(object sender, EventArgs e)
         {
             var form = new LogDownloadMavLink();
 
@@ -3961,7 +3961,7 @@ namespace MissionPlanner.GCSViews
         {
         }
 
-        private void BUT_loganalysis_Click(object sender, EventArgs e)
+        public void BUT_loganalysis_Click(object sender, EventArgs e)
         {
             using (OpenFileDialog ofd = new OpenFileDialog())
             {
@@ -4384,7 +4384,11 @@ namespace MissionPlanner.GCSViews
             tabControlactions.TabPages.Remove(tabGauges);   //移除仪表盘
             tabControlactions.TabPages.Remove(tabStatus);   //移除状态
             tabControlactions.TabPages.Remove(tabServo);    //移除舵机
-            
+            tabControlactions.TabPages.Remove(tabPagePreFlight);        //移除起飞前检查
+            tabControlactions.TabPages.Remove(tabTLogs);        //移除摇杆日志
+            tabControlactions.TabPages.Remove(tabScripts);        //移除脚本
+            tabControlactions.TabPages.Remove(tablogbrowse);        //移除数据闪存日志
+
 
 
             ThemeManager.ApplyThemeTo(tabControlactions);

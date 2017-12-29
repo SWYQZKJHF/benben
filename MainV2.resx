@@ -124,6 +124,36 @@
     <value>127, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="autoHideToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 22</value>
+  </data>
+  <data name="autoHideToolStripMenuItem.Text" xml:space="preserve">
+    <value>AutoHide</value>
+  </data>
+  <data name="fullScreenToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 22</value>
+  </data>
+  <data name="fullScreenToolStripMenuItem.Text" xml:space="preserve">
+    <value>Full Screen</value>
+  </data>
+  <data name="readonlyToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 22</value>
+  </data>
+  <data name="readonlyToolStripMenuItem.Text" xml:space="preserve">
+    <value>Readonly</value>
+  </data>
+  <data name="connectionOptionsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 22</value>
+  </data>
+  <data name="connectionOptionsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Connection Options</value>
+  </data>
+  <data name="connectionListToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 22</value>
+  </data>
+  <data name="connectionListToolStripMenuItem.Text" xml:space="preserve">
+    <value>Connection List</value>
+  </data>
   <data name="CTX_mainmenu.Size" type="System.Drawing.Size, System.Drawing">
     <value>192, 114</value>
   </data>
@@ -134,7 +164,7 @@
     <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="MenuFlightData.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 6pt</value>
+    <value>Arial, 9pt</value>
   </data>
   <data name="MenuFlightData.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -181,7 +211,7 @@
     <value>Magenta</value>
   </data>
   <data name="MenuFlightData.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 69</value>
+    <value>84, 74</value>
   </data>
   <data name="MenuFlightData.Text" xml:space="preserve">
     <value>FLIGHT DATA</value>
@@ -196,7 +226,7 @@
     <value>Flight Data</value>
   </data>
   <data name="MenuFlightPlanner.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 6pt</value>
+    <value>Arial, 9pt</value>
   </data>
   <data name="MenuFlightPlanner.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -254,7 +284,7 @@
     <value>White</value>
   </data>
   <data name="MenuFlightPlanner.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 69</value>
+    <value>87, 74</value>
   </data>
   <data name="MenuFlightPlanner.Text" xml:space="preserve">
     <value>FLIGHT PLAN</value>
@@ -269,13 +299,13 @@
     <value>Flight Planner</value>
   </data>
   <data name="MenuEngineering.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 6pt</value>
+    <value>Arial, 9pt</value>
   </data>
   <data name="MenuEngineering.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
     <value>None</value>
   </data>
   <data name="MenuEngineering.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 69</value>
+    <value>95, 74</value>
   </data>
   <data name="MenuEngineering.Text" xml:space="preserve">
     <value>ENGINEERING</value>
@@ -287,7 +317,7 @@
     <value>ImageAboveText</value>
   </data>
   <data name="MenuInitConfig.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 6pt</value>
+    <value>Arial, 9pt</value>
   </data>
   <data name="MenuInitConfig.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -339,7 +369,7 @@
     <value>Magenta</value>
   </data>
   <data name="MenuInitConfig.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 69</value>
+    <value>93, 74</value>
   </data>
   <data name="MenuInitConfig.Text" xml:space="preserve">
     <value>INITIAL SETUP</value>
@@ -358,7 +388,7 @@
     <value>False</value>
   </data>
   <data name="MenuConfigTune.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 6pt</value>
+    <value>Arial, 9pt</value>
   </data>
   <data name="MenuConfigTune.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -410,7 +440,7 @@
     <value>Magenta</value>
   </data>
   <data name="MenuConfigTune.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 69</value>
+    <value>106, 74</value>
   </data>
   <data name="MenuConfigTune.Text" xml:space="preserve">
     <value>CONFIG/TUNING</value>
@@ -428,7 +458,7 @@
     <value>False</value>
   </data>
   <data name="MenuSimulation.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 6pt</value>
+    <value>Arial, 9pt</value>
   </data>
   <data name="MenuSimulation.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -474,7 +504,7 @@
     <value>Magenta</value>
   </data>
   <data name="MenuSimulation.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 69</value>
+    <value>81, 74</value>
   </data>
   <data name="MenuSimulation.Text" xml:space="preserve">
     <value>SIMULATION</value>
@@ -492,7 +522,7 @@
     <value>False</value>
   </data>
   <data name="MenuTerminal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 6pt</value>
+    <value>Arial, 9pt</value>
   </data>
   <data name="MenuTerminal.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -523,7 +553,7 @@
     <value>Magenta</value>
   </data>
   <data name="MenuTerminal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 69</value>
+    <value>70, 74</value>
   </data>
   <data name="MenuTerminal.Text" xml:space="preserve">
     <value>TERMINAL</value>
@@ -541,7 +571,7 @@
     <value>False</value>
   </data>
   <data name="MenuHelp.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 6pt</value>
+    <value>Arial, 9pt</value>
   </data>
   <data name="MenuHelp.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -581,7 +611,7 @@
     <value>Magenta</value>
   </data>
   <data name="MenuHelp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 69</value>
+    <value>58, 74</value>
   </data>
   <data name="MenuHelp.Text" xml:space="preserve">
     <value>HELP</value>
@@ -599,13 +629,13 @@
     <value>False</value>
   </data>
   <data name="MenuDonate.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 6pt</value>
+    <value>Arial, 9pt</value>
   </data>
   <data name="MenuDonate.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
     <value>None</value>
   </data>
   <data name="MenuDonate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 69</value>
+    <value>59, 74</value>
   </data>
   <data name="MenuDonate.Text" xml:space="preserve">
     <value>DONATE</value>
@@ -667,7 +697,7 @@
     <value>Magenta</value>
   </data>
   <data name="MenuConnect.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 69</value>
+    <value>66, 74</value>
   </data>
   <data name="MenuConnect.Text" xml:space="preserve">
     <value>CONNECT</value>
@@ -678,8 +708,81 @@
   <data name="MenuConnect.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>ImageAboveText</value>
   </data>
+  <data name="menu_tablogbrowse.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="menu_tablogbrowse.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        AAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="menu_tablogbrowse.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="menu_tablogbrowse.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>White</value>
+  </data>
+  <data name="menu_tablogbrowse.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 74</value>
+  </data>
+  <data name="menu_tablogbrowse.Text" xml:space="preserve">
+    <value>DataFlash Logs</value>
+  </data>
+  <data name="menu_tablogbrowse.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="menu_tablogbrowse.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageAboveText</value>
+  </data>
+  <data name="menu_tablogbrowse.ToolTipText" xml:space="preserve">
+    <value>Flight Planner</value>
+  </data>
   <data name="toolStripConnectionControl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 69</value>
+    <value>230, 74</value>
   </data>
   <data name="MenuArduPilot.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 6pt</value>
@@ -688,7 +791,7 @@
     <value>None</value>
   </data>
   <data name="MenuArduPilot.Size" type="System.Drawing.Size, System.Drawing">
-    <value>387, 69</value>
+    <value>387, 74</value>
   </data>
   <data name="MenuArduPilot.Text" xml:space="preserve">
     <value>benben</value>
@@ -703,7 +806,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="MainMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1178, 69</value>
+    <value>1178, 74</value>
   </data>
   <data name="MainMenu.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -722,36 +825,6 @@
   </data>
   <data name="&gt;&gt;MainMenu.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="autoHideToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>191, 22</value>
-  </data>
-  <data name="autoHideToolStripMenuItem.Text" xml:space="preserve">
-    <value>AutoHide</value>
-  </data>
-  <data name="fullScreenToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>191, 22</value>
-  </data>
-  <data name="fullScreenToolStripMenuItem.Text" xml:space="preserve">
-    <value>Full Screen</value>
-  </data>
-  <data name="readonlyToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>191, 22</value>
-  </data>
-  <data name="readonlyToolStripMenuItem.Text" xml:space="preserve">
-    <value>Readonly</value>
-  </data>
-  <data name="connectionOptionsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>191, 22</value>
-  </data>
-  <data name="connectionOptionsToolStripMenuItem.Text" xml:space="preserve">
-    <value>Connection Options</value>
-  </data>
-  <data name="connectionListToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>191, 22</value>
-  </data>
-  <data name="connectionListToolStripMenuItem.Text" xml:space="preserve">
-    <value>Connection List</value>
   </data>
   <data name="menu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -790,7 +863,7 @@
     <value>Bottom</value>
   </data>
   <data name="other_Stabilize.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 6pt</value>
+    <value>Arial, 9pt</value>
   </data>
   <data name="other_Stabilize.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -821,7 +894,7 @@
     <value>Magenta</value>
   </data>
   <data name="other_Stabilize.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 69</value>
+    <value>57, 74</value>
   </data>
   <data name="other_Stabilize.Text" xml:space="preserve">
     <value>Stabilize</value>
@@ -833,7 +906,7 @@
     <value>ImageAboveText</value>
   </data>
   <data name="other_Acro.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 6pt</value>
+    <value>Arial, 9pt</value>
   </data>
   <data name="other_Acro.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -864,7 +937,7 @@
     <value>Magenta</value>
   </data>
   <data name="other_Acro.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 69</value>
+    <value>57, 74</value>
   </data>
   <data name="other_Acro.Text" xml:space="preserve">
     <value>Acro</value>
@@ -879,7 +952,7 @@
     <value>False</value>
   </data>
   <data name="other_AltHold.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 6pt</value>
+    <value>Arial, 9pt</value>
   </data>
   <data name="other_AltHold.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -910,7 +983,7 @@
     <value>Magenta</value>
   </data>
   <data name="other_AltHold.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 69</value>
+    <value>57, 74</value>
   </data>
   <data name="other_AltHold.Text" xml:space="preserve">
     <value>AltHold</value>
@@ -925,7 +998,7 @@
     <value>False</value>
   </data>
   <data name="other_Guided.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 6pt</value>
+    <value>Arial, 9pt</value>
   </data>
   <data name="other_Guided.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -956,7 +1029,7 @@
     <value>Magenta</value>
   </data>
   <data name="other_Guided.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 69</value>
+    <value>57, 74</value>
   </data>
   <data name="other_Guided.Text" xml:space="preserve">
     <value>Guided</value>
@@ -971,7 +1044,7 @@
     <value>False</value>
   </data>
   <data name="other_Circle.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 6pt</value>
+    <value>Arial, 9pt</value>
   </data>
   <data name="other_Circle.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1002,7 +1075,7 @@
     <value>Magenta</value>
   </data>
   <data name="other_Circle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 69</value>
+    <value>57, 74</value>
   </data>
   <data name="other_Circle.Text" xml:space="preserve">
     <value>Circle</value>
@@ -1017,7 +1090,7 @@
     <value>False</value>
   </data>
   <data name="other_Land.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 6pt</value>
+    <value>Arial, 9pt</value>
   </data>
   <data name="other_Land.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1048,7 +1121,7 @@
     <value>Magenta</value>
   </data>
   <data name="other_Land.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 69</value>
+    <value>57, 74</value>
   </data>
   <data name="other_Land.Text" xml:space="preserve">
     <value>Land</value>
@@ -1063,7 +1136,7 @@
     <value>False</value>
   </data>
   <data name="other_Drift.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 6pt</value>
+    <value>Arial, 9pt</value>
   </data>
   <data name="other_Drift.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1094,7 +1167,7 @@
     <value>Magenta</value>
   </data>
   <data name="other_Drift.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 69</value>
+    <value>57, 74</value>
   </data>
   <data name="other_Drift.Text" xml:space="preserve">
     <value>Drift</value>
@@ -1109,7 +1182,7 @@
     <value>False</value>
   </data>
   <data name="other_Sport.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 6pt</value>
+    <value>Arial, 9pt</value>
   </data>
   <data name="other_Sport.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1140,7 +1213,7 @@
     <value>Magenta</value>
   </data>
   <data name="other_Sport.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 69</value>
+    <value>57, 74</value>
   </data>
   <data name="other_Sport.Text" xml:space="preserve">
     <value>Sport</value>
@@ -1155,7 +1228,7 @@
     <value>False</value>
   </data>
   <data name="other_Flip.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 6pt</value>
+    <value>Arial, 9pt</value>
   </data>
   <data name="other_Flip.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1186,7 +1259,7 @@
     <value>Magenta</value>
   </data>
   <data name="other_Flip.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 69</value>
+    <value>57, 74</value>
   </data>
   <data name="other_Flip.Text" xml:space="preserve">
     <value>Flip</value>
@@ -1201,7 +1274,7 @@
     <value>False</value>
   </data>
   <data name="other_AutoTune.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 6pt</value>
+    <value>Arial, 9pt</value>
   </data>
   <data name="other_AutoTune.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1232,7 +1305,7 @@
     <value>Magenta</value>
   </data>
   <data name="other_AutoTune.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 69</value>
+    <value>63, 74</value>
   </data>
   <data name="other_AutoTune.Text" xml:space="preserve">
     <value>AutoTune</value>
@@ -1247,7 +1320,7 @@
     <value>False</value>
   </data>
   <data name="other_PosHold.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 6pt</value>
+    <value>Arial, 9pt</value>
   </data>
   <data name="other_PosHold.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1278,7 +1351,7 @@
     <value>Magenta</value>
   </data>
   <data name="other_PosHold.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 69</value>
+    <value>59, 74</value>
   </data>
   <data name="other_PosHold.Text" xml:space="preserve">
     <value>PosHold</value>
@@ -1293,7 +1366,7 @@
     <value>False</value>
   </data>
   <data name="other_Brake.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 6pt</value>
+    <value>Arial, 9pt</value>
   </data>
   <data name="other_Brake.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1324,7 +1397,7 @@
     <value>Magenta</value>
   </data>
   <data name="other_Brake.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 69</value>
+    <value>57, 74</value>
   </data>
   <data name="other_Brake.Text" xml:space="preserve">
     <value>Brake</value>
@@ -1339,7 +1412,7 @@
     <value>False</value>
   </data>
   <data name="other_Throw.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 6pt</value>
+    <value>Arial, 9pt</value>
   </data>
   <data name="other_Throw.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1370,7 +1443,7 @@
     <value>Magenta</value>
   </data>
   <data name="other_Throw.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 69</value>
+    <value>57, 74</value>
   </data>
   <data name="other_Throw.Text" xml:space="preserve">
     <value>Throw</value>
@@ -1385,7 +1458,7 @@
     <value>False</value>
   </data>
   <data name="other_Avoid_ADSB.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 6pt</value>
+    <value>Arial, 9pt</value>
   </data>
   <data name="other_Avoid_ADSB.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1416,7 +1489,7 @@
     <value>Magenta</value>
   </data>
   <data name="other_Avoid_ADSB.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 69</value>
+    <value>79, 74</value>
   </data>
   <data name="other_Avoid_ADSB.Text" xml:space="preserve">
     <value>Avoid_ADSB</value>
@@ -1431,7 +1504,7 @@
     <value>False</value>
   </data>
   <data name="other_Guided_NoGPS.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 6pt</value>
+    <value>Arial, 9pt</value>
   </data>
   <data name="other_Guided_NoGPS.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1462,7 +1535,7 @@
     <value>Magenta</value>
   </data>
   <data name="other_Guided_NoGPS.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 69</value>
+    <value>99, 74</value>
   </data>
   <data name="other_Guided_NoGPS.Text" xml:space="preserve">
     <value>Guided_NoGPS</value>
@@ -1477,7 +1550,7 @@
     <value>False</value>
   </data>
   <data name="other_Smart_RTL.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 6pt</value>
+    <value>Arial, 9pt</value>
   </data>
   <data name="other_Smart_RTL.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1508,7 +1581,7 @@
     <value>Magenta</value>
   </data>
   <data name="other_Smart_RTL.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 69</value>
+    <value>74, 74</value>
   </data>
   <data name="other_Smart_RTL.Text" xml:space="preserve">
     <value>Smart_RTL</value>
@@ -1523,7 +1596,7 @@
     <value>False</value>
   </data>
   <data name="BUT_LOITER_UNLIM.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 6pt</value>
+    <value>Arial, 9pt</value>
   </data>
   <data name="BUT_LOITER_UNLIM.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1554,7 +1627,7 @@
     <value>Magenta</value>
   </data>
   <data name="BUT_LOITER_UNLIM.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 69</value>
+    <value>98, 74</value>
   </data>
   <data name="BUT_LOITER_UNLIM.Text" xml:space="preserve">
     <value>LOITER_UNLIM</value>
@@ -1565,8 +1638,11 @@
   <data name="BUT_LOITER_UNLIM.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>ImageAboveText</value>
   </data>
+  <data name="BUT_LOITER_UNLIM.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="BUT_RETURN_TO_LAUNCH.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 6pt</value>
+    <value>Arial, 9pt</value>
   </data>
   <data name="BUT_RETURN_TO_LAUNCH.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1597,7 +1673,7 @@
     <value>Magenta</value>
   </data>
   <data name="BUT_RETURN_TO_LAUNCH.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 69</value>
+    <value>142, 74</value>
   </data>
   <data name="BUT_RETURN_TO_LAUNCH.Text" xml:space="preserve">
     <value>RETURN_TO_LAUNCH</value>
@@ -1608,8 +1684,11 @@
   <data name="BUT_RETURN_TO_LAUNCH.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>ImageAboveText</value>
   </data>
+  <data name="BUT_RETURN_TO_LAUNCH.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="BUT_PREFLIGHT_CALIBRATION.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 6pt</value>
+    <value>Arial, 9pt</value>
   </data>
   <data name="BUT_PREFLIGHT_CALIBRATION.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1640,7 +1719,7 @@
     <value>Magenta</value>
   </data>
   <data name="BUT_PREFLIGHT_CALIBRATION.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 69</value>
+    <value>162, 74</value>
   </data>
   <data name="BUT_PREFLIGHT_CALIBRATION.Text" xml:space="preserve">
     <value>PREFLIGHT_CALIBRATION</value>
@@ -1651,8 +1730,11 @@
   <data name="BUT_PREFLIGHT_CALIBRATION.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>ImageAboveText</value>
   </data>
+  <data name="BUT_PREFLIGHT_CALIBRATION.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="BUT_MISSION_START.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 6pt</value>
+    <value>Arial, 9pt</value>
   </data>
   <data name="BUT_MISSION_START.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1683,7 +1765,7 @@
     <value>Magenta</value>
   </data>
   <data name="BUT_MISSION_START.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 69</value>
+    <value>104, 74</value>
   </data>
   <data name="BUT_MISSION_START.Text" xml:space="preserve">
     <value>MISSION_START</value>
@@ -1694,8 +1776,11 @@
   <data name="BUT_MISSION_START.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>ImageAboveText</value>
   </data>
+  <data name="BUT_MISSION_START.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="BUT_PREFLIGHT_REBOOT_SHUTDOWN.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 6pt</value>
+    <value>Arial, 9pt</value>
   </data>
   <data name="BUT_PREFLIGHT_REBOOT_SHUTDOWN.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1726,7 +1811,7 @@
     <value>Magenta</value>
   </data>
   <data name="BUT_PREFLIGHT_REBOOT_SHUTDOWN.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 69</value>
+    <value>213, 74</value>
   </data>
   <data name="BUT_PREFLIGHT_REBOOT_SHUTDOWN.Text" xml:space="preserve">
     <value>PREFLIGHT_REBOOT_SHUTDOWN</value>
@@ -1737,8 +1822,11 @@
   <data name="BUT_PREFLIGHT_REBOOT_SHUTDOWN.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>ImageAboveText</value>
   </data>
+  <data name="BUT_PREFLIGHT_REBOOT_SHUTDOWN.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="BUT_Trigger_Camera_NOW.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 6pt</value>
+    <value>Arial, 9pt</value>
   </data>
   <data name="BUT_Trigger_Camera_NOW.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1769,7 +1857,7 @@
     <value>Magenta</value>
   </data>
   <data name="BUT_Trigger_Camera_NOW.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 69</value>
+    <value>130, 74</value>
   </data>
   <data name="BUT_Trigger_Camera_NOW.Text" xml:space="preserve">
     <value>Trigger Camera NOW</value>
@@ -1780,20 +1868,281 @@
   <data name="BUT_Trigger_Camera_NOW.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>ImageAboveText</value>
   </data>
+  <data name="BUT_Trigger_Camera_NOW.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="LB_BUT_DFMavlink.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="LB_BUT_DFMavlink.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADUAAAAtCAYAAAAOYyOGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOvSURBVGhD7ZnbShtBGIB9BG9CNAc36gv4Bt0bkUqllrZI
+        aTW2zUWrWE9IqkKzxUPQqNtgNJ5ijBiSGHUtaLVGuxfVXihpoiYR8WxQ8QA+wt8d2URiV01LamLdD/6b
+        WYb9v5nZmeWfOB4eHh6eOwFJkvEajQaPqVCrcTUTbIrhg2T6+vqMgzYbDNntMRU2qxV6ewygVX86ZeTy
+        2ZSvZ2pqyuh2u2FlZQVWV1djKnw+H8zPz8MoRYGutRXCnrX19XU4OjqCk5OTmIvj42M4ODiARfcioJXU
+        rNEY2bSvBgnt7+/D2toaeDyeNLY5Zjg8PCR3dnZg2jENOq2WZpuvBo0IEpr4MgFsU0zh9/uJvb09mP0+
+        Cx1tbeFLLS8vQ7/JFBWpzAJRWqZCeOkmsLW1RaCV9GNuDjo7OsKXWlpaAmNv741LyVVYfI5SePronRjS
+        XyYSbHMIt0oKCZV1S13l3SmQq8IgUyHinK1bJaU0JFE1I6nw3pQKuR+SLt3Vbo1URbeErKNSgLCnQEFz
+        EsU2cxJxqbxKAfmsQkBnvU2g0+Wi4HYvrxKk5VYK6KelAvq+IiHkRS+qBPno2ZMiAZ3xSkiyzUHK9KL8
+        +lEZIKnSdqkLLUP2EScRl6o0SOiSVgnkVIghQy4MnublejFe3SeBwhYJZBeJQvopO8WEslsKijoJPHiT
+        GJJEcasYr6cwaBxLBqVeeHqdECLiUg3jMlpllUGeSgoZr8+lauwYTjqSodIkgyflkpB+6s8Y0cAkXdKG
+        QVZRqNRHm5RumpCBckB4qqg9n/mriLhU7SCWpjRi+PNqMX5Pfj6qKiMWr6YwvFyP4Y+LxSH/YyoLJkPS
+        hSSGP2TOILb5DBWFxRNWKV3QePm5dJFbs1H8CbxUAF4qCvBSAXipKMBLBeClogAvFQBJeTweMA8MQFNT
+        UzZnpTQKodfrcYfDgW9vb1N/JbWxsQHfZmZgeGiIs1IajRgfG4OfTiegSlKwmtTeHl7dD9XVUMFwc3OT
+        s0oarUBlO7/ff1ZoZWYLHFMO0Ol04dclkRiasVgLVKFFS29hYWHLajZns+neHMzA0BeTYtqA+dDB6/Vy
+        lr9iHmbd/ya1u7t79oHbLJb/RwrN0tfJSdBqtbzUjWDoMdDocOaKkeFhcLlcZ1cuF6WCy89q5eyLoquz
+        C8iWlvDvniKF0+mk0V8HV6DLOpQ81x1XYKPweb2cfVGg86ff1A/oKpR93c3AnBv56HflXwQzYITFbCGY
+        mZKxr7vrxMX9AhHLB76xDwzlAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="LB_BUT_DFMavlink.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="LB_BUT_DFMavlink.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="LB_BUT_DFMavlink.Size" type="System.Drawing.Size, System.Drawing">
+    <value>214, 74</value>
+  </data>
+  <data name="LB_BUT_DFMavlink.Text" xml:space="preserve">
+    <value>Download DataFlash Log Via Mavlink</value>
+  </data>
+  <data name="LB_BUT_DFMavlink.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="LB_BUT_DFMavlink.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageAboveText</value>
+  </data>
+  <data name="LB_BUT_dflogtokml.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="LB_BUT_dflogtokml.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADUAAAAtCAYAAAAOYyOGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOvSURBVGhD7ZnbShtBGIB9BG9CNAc36gv4Bt0bkUqllrZI
+        aTW2zUWrWE9IqkKzxUPQqNtgNJ5ijBiSGHUtaLVGuxfVXihpoiYR8WxQ8QA+wt8d2URiV01LamLdD/6b
+        WYb9v5nZmeWfOB4eHh6eOwFJkvEajQaPqVCrcTUTbIrhg2T6+vqMgzYbDNntMRU2qxV6ewygVX86ZeTy
+        2ZSvZ2pqyuh2u2FlZQVWV1djKnw+H8zPz8MoRYGutRXCnrX19XU4OjqCk5OTmIvj42M4ODiARfcioJXU
+        rNEY2bSvBgnt7+/D2toaeDyeNLY5Zjg8PCR3dnZg2jENOq2WZpuvBo0IEpr4MgFsU0zh9/uJvb09mP0+
+        Cx1tbeFLLS8vQ7/JFBWpzAJRWqZCeOkmsLW1RaCV9GNuDjo7OsKXWlpaAmNv741LyVVYfI5SePronRjS
+        XyYSbHMIt0oKCZV1S13l3SmQq8IgUyHinK1bJaU0JFE1I6nw3pQKuR+SLt3Vbo1URbeErKNSgLCnQEFz
+        EsU2cxJxqbxKAfmsQkBnvU2g0+Wi4HYvrxKk5VYK6KelAvq+IiHkRS+qBPno2ZMiAZ3xSkiyzUHK9KL8
+        +lEZIKnSdqkLLUP2EScRl6o0SOiSVgnkVIghQy4MnublejFe3SeBwhYJZBeJQvopO8WEslsKijoJPHiT
+        GJJEcasYr6cwaBxLBqVeeHqdECLiUg3jMlpllUGeSgoZr8+lauwYTjqSodIkgyflkpB+6s8Y0cAkXdKG
+        QVZRqNRHm5RumpCBckB4qqg9n/mriLhU7SCWpjRi+PNqMX5Pfj6qKiMWr6YwvFyP4Y+LxSH/YyoLJkPS
+        hSSGP2TOILb5DBWFxRNWKV3QePm5dJFbs1H8CbxUAF4qCvBSAXipKMBLBeClogAvFQBJeTweMA8MQFNT
+        UzZnpTQKodfrcYfDgW9vb1N/JbWxsQHfZmZgeGiIs1IajRgfG4OfTiegSlKwmtTeHl7dD9XVUMFwc3OT
+        s0oarUBlO7/ff1ZoZWYLHFMO0Ol04dclkRiasVgLVKFFS29hYWHLajZns+neHMzA0BeTYtqA+dDB6/Vy
+        lr9iHmbd/ya1u7t79oHbLJb/RwrN0tfJSdBqtbzUjWDoMdDocOaKkeFhcLlcZ1cuF6WCy89q5eyLoquz
+        C8iWlvDvniKF0+mk0V8HV6DLOpQ81x1XYKPweb2cfVGg86ff1A/oKpR93c3AnBv56HflXwQzYITFbCGY
+        mZKxr7vrxMX9AhHLB76xDwzlAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="LB_BUT_dflogtokml.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="LB_BUT_dflogtokml.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="LB_BUT_dflogtokml.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 74</value>
+  </data>
+  <data name="LB_BUT_dflogtokml.Text" xml:space="preserve">
+    <value>Create KML + gpx</value>
+  </data>
+  <data name="LB_BUT_dflogtokml.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="LB_BUT_dflogtokml.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageAboveText</value>
+  </data>
+  <data name="LB_BUT_logbrowse.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="LB_BUT_logbrowse.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADUAAAAtCAYAAAAOYyOGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOvSURBVGhD7ZnbShtBGIB9BG9CNAc36gv4Bt0bkUqllrZI
+        aTW2zUWrWE9IqkKzxUPQqNtgNJ5ijBiSGHUtaLVGuxfVXihpoiYR8WxQ8QA+wt8d2URiV01LamLdD/6b
+        WYb9v5nZmeWfOB4eHh6eOwFJkvEajQaPqVCrcTUTbIrhg2T6+vqMgzYbDNntMRU2qxV6ewygVX86ZeTy
+        2ZSvZ2pqyuh2u2FlZQVWV1djKnw+H8zPz8MoRYGutRXCnrX19XU4OjqCk5OTmIvj42M4ODiARfcioJXU
+        rNEY2bSvBgnt7+/D2toaeDyeNLY5Zjg8PCR3dnZg2jENOq2WZpuvBo0IEpr4MgFsU0zh9/uJvb09mP0+
+        Cx1tbeFLLS8vQ7/JFBWpzAJRWqZCeOkmsLW1RaCV9GNuDjo7OsKXWlpaAmNv741LyVVYfI5SePronRjS
+        XyYSbHMIt0oKCZV1S13l3SmQq8IgUyHinK1bJaU0JFE1I6nw3pQKuR+SLt3Vbo1URbeErKNSgLCnQEFz
+        EsU2cxJxqbxKAfmsQkBnvU2g0+Wi4HYvrxKk5VYK6KelAvq+IiHkRS+qBPno2ZMiAZ3xSkiyzUHK9KL8
+        +lEZIKnSdqkLLUP2EScRl6o0SOiSVgnkVIghQy4MnublejFe3SeBwhYJZBeJQvopO8WEslsKijoJPHiT
+        GJJEcasYr6cwaBxLBqVeeHqdECLiUg3jMlpllUGeSgoZr8+lauwYTjqSodIkgyflkpB+6s8Y0cAkXdKG
+        QVZRqNRHm5RumpCBckB4qqg9n/mriLhU7SCWpjRi+PNqMX5Pfj6qKiMWr6YwvFyP4Y+LxSH/YyoLJkPS
+        hSSGP2TOILb5DBWFxRNWKV3QePm5dJFbs1H8CbxUAF4qCvBSAXipKMBLBeClogAvFQBJeTweMA8MQFNT
+        UzZnpTQKodfrcYfDgW9vb1N/JbWxsQHfZmZgeGiIs1IajRgfG4OfTiegSlKwmtTeHl7dD9XVUMFwc3OT
+        s0oarUBlO7/ff1ZoZWYLHFMO0Ol04dclkRiasVgLVKFFS29hYWHLajZns+neHMzA0BeTYtqA+dDB6/Vy
+        lr9iHmbd/ya1u7t79oHbLJb/RwrN0tfJSdBqtbzUjWDoMdDocOaKkeFhcLlcZ1cuF6WCy89q5eyLoquz
+        C8iWlvDvniKF0+mk0V8HV6DLOpQ81x1XYKPweb2cfVGg86ff1A/oKpR93c3AnBv56HflXwQzYITFbCGY
+        mZKxr7vrxMX9AhHLB76xDwzlAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="LB_BUT_logbrowse.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="LB_BUT_logbrowse.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="LB_BUT_logbrowse.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 74</value>
+  </data>
+  <data name="LB_BUT_logbrowse.Text" xml:space="preserve">
+    <value>Review a Log</value>
+  </data>
+  <data name="LB_BUT_logbrowse.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="LB_BUT_logbrowse.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageAboveText</value>
+  </data>
+  <data name="LB_BUT_bintolog.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="LB_BUT_bintolog.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADUAAAAtCAYAAAAOYyOGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOvSURBVGhD7ZnbShtBGIB9BG9CNAc36gv4Bt0bkUqllrZI
+        aTW2zUWrWE9IqkKzxUPQqNtgNJ5ijBiSGHUtaLVGuxfVXihpoiYR8WxQ8QA+wt8d2URiV01LamLdD/6b
+        WYb9v5nZmeWfOB4eHh6eOwFJkvEajQaPqVCrcTUTbIrhg2T6+vqMgzYbDNntMRU2qxV6ewygVX86ZeTy
+        2ZSvZ2pqyuh2u2FlZQVWV1djKnw+H8zPz8MoRYGutRXCnrX19XU4OjqCk5OTmIvj42M4ODiARfcioJXU
+        rNEY2bSvBgnt7+/D2toaeDyeNLY5Zjg8PCR3dnZg2jENOq2WZpuvBo0IEpr4MgFsU0zh9/uJvb09mP0+
+        Cx1tbeFLLS8vQ7/JFBWpzAJRWqZCeOkmsLW1RaCV9GNuDjo7OsKXWlpaAmNv741LyVVYfI5SePronRjS
+        XyYSbHMIt0oKCZV1S13l3SmQq8IgUyHinK1bJaU0JFE1I6nw3pQKuR+SLt3Vbo1URbeErKNSgLCnQEFz
+        EsU2cxJxqbxKAfmsQkBnvU2g0+Wi4HYvrxKk5VYK6KelAvq+IiHkRS+qBPno2ZMiAZ3xSkiyzUHK9KL8
+        +lEZIKnSdqkLLUP2EScRl6o0SOiSVgnkVIghQy4MnublejFe3SeBwhYJZBeJQvopO8WEslsKijoJPHiT
+        GJJEcasYr6cwaBxLBqVeeHqdECLiUg3jMlpllUGeSgoZr8+lauwYTjqSodIkgyflkpB+6s8Y0cAkXdKG
+        QVZRqNRHm5RumpCBckB4qqg9n/mriLhU7SCWpjRi+PNqMX5Pfj6qKiMWr6YwvFyP4Y+LxSH/YyoLJkPS
+        hSSGP2TOILb5DBWFxRNWKV3QePm5dJFbs1H8CbxUAF4qCvBSAXipKMBLBeClogAvFQBJeTweMA8MQFNT
+        UzZnpTQKodfrcYfDgW9vb1N/JbWxsQHfZmZgeGiIs1IajRgfG4OfTiegSlKwmtTeHl7dD9XVUMFwc3OT
+        s0oarUBlO7/ff1ZoZWYLHFMO0Ol04dclkRiasVgLVKFFS29hYWHLajZns+neHMzA0BeTYtqA+dDB6/Vy
+        lr9iHmbd/ya1u7t79oHbLJb/RwrN0tfJSdBqtbzUjWDoMdDocOaKkeFhcLlcZ1cuF6WCy89q5eyLoquz
+        C8iWlvDvniKF0+mk0V8HV6DLOpQ81x1XYKPweb2cfVGg86ff1A/oKpR93c3AnBv56HflXwQzYITFbCGY
+        mZKxr7vrxMX9AhHLB76xDwzlAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="LB_BUT_bintolog.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="LB_BUT_bintolog.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="LB_BUT_bintolog.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 74</value>
+  </data>
+  <data name="LB_BUT_bintolog.Text" xml:space="preserve">
+    <value>PX4 .Bin to .Log</value>
+  </data>
+  <data name="LB_BUT_bintolog.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="LB_BUT_bintolog.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageAboveText</value>
+  </data>
+  <data name="LB_BUT_loganalysis.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="LB_BUT_loganalysis.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADUAAAAtCAYAAAAOYyOGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOvSURBVGhD7ZnbShtBGIB9BG9CNAc36gv4Bt0bkUqllrZI
+        aTW2zUWrWE9IqkKzxUPQqNtgNJ5ijBiSGHUtaLVGuxfVXihpoiYR8WxQ8QA+wt8d2URiV01LamLdD/6b
+        WYb9v5nZmeWfOB4eHh6eOwFJkvEajQaPqVCrcTUTbIrhg2T6+vqMgzYbDNntMRU2qxV6ewygVX86ZeTy
+        2ZSvZ2pqyuh2u2FlZQVWV1djKnw+H8zPz8MoRYGutRXCnrX19XU4OjqCk5OTmIvj42M4ODiARfcioJXU
+        rNEY2bSvBgnt7+/D2toaeDyeNLY5Zjg8PCR3dnZg2jENOq2WZpuvBo0IEpr4MgFsU0zh9/uJvb09mP0+
+        Cx1tbeFLLS8vQ7/JFBWpzAJRWqZCeOkmsLW1RaCV9GNuDjo7OsKXWlpaAmNv741LyVVYfI5SePronRjS
+        XyYSbHMIt0oKCZV1S13l3SmQq8IgUyHinK1bJaU0JFE1I6nw3pQKuR+SLt3Vbo1URbeErKNSgLCnQEFz
+        EsU2cxJxqbxKAfmsQkBnvU2g0+Wi4HYvrxKk5VYK6KelAvq+IiHkRS+qBPno2ZMiAZ3xSkiyzUHK9KL8
+        +lEZIKnSdqkLLUP2EScRl6o0SOiSVgnkVIghQy4MnublejFe3SeBwhYJZBeJQvopO8WEslsKijoJPHiT
+        GJJEcasYr6cwaBxLBqVeeHqdECLiUg3jMlpllUGeSgoZr8+lauwYTjqSodIkgyflkpB+6s8Y0cAkXdKG
+        QVZRqNRHm5RumpCBckB4qqg9n/mriLhU7SCWpjRi+PNqMX5Pfj6qKiMWr6YwvFyP4Y+LxSH/YyoLJkPS
+        hSSGP2TOILb5DBWFxRNWKV3QePm5dJFbs1H8CbxUAF4qCvBSAXipKMBLBeClogAvFQBJeTweMA8MQFNT
+        UzZnpTQKodfrcYfDgW9vb1N/JbWxsQHfZmZgeGiIs1IajRgfG4OfTiegSlKwmtTeHl7dD9XVUMFwc3OT
+        s0oarUBlO7/ff1ZoZWYLHFMO0Ol04dclkRiasVgLVKFFS29hYWHLajZns+neHMzA0BeTYtqA+dDB6/Vy
+        lr9iHmbd/ya1u7t79oHbLJb/RwrN0tfJSdBqtbzUjWDoMdDocOaKkeFhcLlcZ1cuF6WCy89q5eyLoquz
+        C8iWlvDvniKF0+mk0V8HV6DLOpQ81x1XYKPweb2cfVGg86ff1A/oKpR93c3AnBv56HflXwQzYITFbCGY
+        mZKxr7vrxMX9AhHLB76xDwzlAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="LB_BUT_loganalysis.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="LB_BUT_loganalysis.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="LB_BUT_loganalysis.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 74</value>
+  </data>
+  <data name="LB_BUT_loganalysis.Text" xml:space="preserve">
+    <value>Auto Analysis</value>
+  </data>
+  <data name="LB_BUT_loganalysis.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="LB_BUT_loganalysis.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageAboveText</value>
+  </data>
+  <data name="LB_BUT_matlab.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="LB_BUT_matlab.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADUAAAAtCAYAAAAOYyOGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOvSURBVGhD7ZnbShtBGIB9BG9CNAc36gv4Bt0bkUqllrZI
+        aTW2zUWrWE9IqkKzxUPQqNtgNJ5ijBiSGHUtaLVGuxfVXihpoiYR8WxQ8QA+wt8d2URiV01LamLdD/6b
+        WYb9v5nZmeWfOB4eHh6eOwFJkvEajQaPqVCrcTUTbIrhg2T6+vqMgzYbDNntMRU2qxV6ewygVX86ZeTy
+        2ZSvZ2pqyuh2u2FlZQVWV1djKnw+H8zPz8MoRYGutRXCnrX19XU4OjqCk5OTmIvj42M4ODiARfcioJXU
+        rNEY2bSvBgnt7+/D2toaeDyeNLY5Zjg8PCR3dnZg2jENOq2WZpuvBo0IEpr4MgFsU0zh9/uJvb09mP0+
+        Cx1tbeFLLS8vQ7/JFBWpzAJRWqZCeOkmsLW1RaCV9GNuDjo7OsKXWlpaAmNv741LyVVYfI5SePronRjS
+        XyYSbHMIt0oKCZV1S13l3SmQq8IgUyHinK1bJaU0JFE1I6nw3pQKuR+SLt3Vbo1URbeErKNSgLCnQEFz
+        EsU2cxJxqbxKAfmsQkBnvU2g0+Wi4HYvrxKk5VYK6KelAvq+IiHkRS+qBPno2ZMiAZ3xSkiyzUHK9KL8
+        +lEZIKnSdqkLLUP2EScRl6o0SOiSVgnkVIghQy4MnublejFe3SeBwhYJZBeJQvopO8WEslsKijoJPHiT
+        GJJEcasYr6cwaBxLBqVeeHqdECLiUg3jMlpllUGeSgoZr8+lauwYTjqSodIkgyflkpB+6s8Y0cAkXdKG
+        QVZRqNRHm5RumpCBckB4qqg9n/mriLhU7SCWpjRi+PNqMX5Pfj6qKiMWr6YwvFyP4Y+LxSH/YyoLJkPS
+        hSSGP2TOILb5DBWFxRNWKV3QePm5dJFbs1H8CbxUAF4qCvBSAXipKMBLBeClogAvFQBJeTweMA8MQFNT
+        UzZnpTQKodfrcYfDgW9vb1N/JbWxsQHfZmZgeGiIs1IajRgfG4OfTiegSlKwmtTeHl7dD9XVUMFwc3OT
+        s0oarUBlO7/ff1ZoZWYLHFMO0Ol04dclkRiasVgLVKFFS29hYWHLajZns+neHMzA0BeTYtqA+dDB6/Vy
+        lr9iHmbd/ya1u7t79oHbLJb/RwrN0tfJSdBqtbzUjWDoMdDocOaKkeFhcLlcZ1cuF6WCy89q5eyLoquz
+        C8iWlvDvniKF0+mk0V8HV6DLOpQ81x1XYKPweb2cfVGg86ff1A/oKpR93c3AnBv56HflXwQzYITFbCGY
+        mZKxr7vrxMX9AhHLB76xDwzlAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="LB_BUT_matlab.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="LB_BUT_matlab.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="LB_BUT_matlab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 74</value>
+  </data>
+  <data name="LB_BUT_matlab.Text" xml:space="preserve">
+    <value>Create Matlab File</value>
+  </data>
+  <data name="LB_BUT_matlab.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="LB_BUT_matlab.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageAboveText</value>
+  </data>
   <data name="menuStrip2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 138</value>
+    <value>0, 142</value>
   </data>
   <data name="menuStrip2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="menuStrip2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1178, 69</value>
+    <value>1178, 74</value>
   </data>
   <data name="menuStrip2.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
   <data name="menuStrip2.Text" xml:space="preserve">
-    <value>menuStrip2</value>
+    <value>Create Matlab File</value>
   </data>
   <data name="&gt;&gt;menuStrip2.Name" xml:space="preserve">
     <value>menuStrip2</value>
@@ -1811,7 +2160,7 @@
     <value>271, 17</value>
   </metadata>
   <data name="menu_ARM.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 6pt</value>
+    <value>Arial, 9pt</value>
   </data>
   <data name="menu_ARM.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1842,7 +2191,7 @@
     <value>Magenta</value>
   </data>
   <data name="menu_ARM.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 69</value>
+    <value>80, 74</value>
   </data>
   <data name="menu_ARM.Text" xml:space="preserve">
     <value>Arm/ Disarm</value>
@@ -1854,7 +2203,7 @@
     <value>ImageAboveText</value>
   </data>
   <data name="Menu_quickauto.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 6pt</value>
+    <value>Arial, 9pt</value>
   </data>
   <data name="Menu_quickauto.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1885,7 +2234,7 @@
     <value>Magenta</value>
   </data>
   <data name="Menu_quickauto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 69</value>
+    <value>57, 74</value>
   </data>
   <data name="Menu_quickauto.Text" xml:space="preserve">
     <value>Auto</value>
@@ -1897,7 +2246,7 @@
     <value>ImageAboveText</value>
   </data>
   <data name="Menu_quickmanual.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 6pt</value>
+    <value>Arial, 9pt</value>
   </data>
   <data name="Menu_quickmanual.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1928,7 +2277,7 @@
     <value>Magenta</value>
   </data>
   <data name="Menu_quickmanual.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 69</value>
+    <value>57, 74</value>
   </data>
   <data name="Menu_quickmanual.Text" xml:space="preserve">
     <value>Loiter</value>
@@ -1940,7 +2289,7 @@
     <value>ImageAboveText</value>
   </data>
   <data name="menu_quickrtl.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 6pt</value>
+    <value>Arial, 9pt</value>
   </data>
   <data name="menu_quickrtl.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1971,7 +2320,7 @@
     <value>Magenta</value>
   </data>
   <data name="menu_quickrtl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 69</value>
+    <value>57, 74</value>
   </data>
   <data name="menu_quickrtl.Text" xml:space="preserve">
     <value>RTL</value>
@@ -1983,7 +2332,7 @@
     <value>ImageAboveText</value>
   </data>
   <data name="menu_othermode.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 6pt</value>
+    <value>Arial, 9pt</value>
   </data>
   <data name="menu_othermode.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2014,7 +2363,7 @@
     <value>Magenta</value>
   </data>
   <data name="menu_othermode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 69</value>
+    <value>73, 74</value>
   </data>
   <data name="menu_othermode.Text" xml:space="preserve">
     <value>Othermode</value>
@@ -2026,7 +2375,7 @@
     <value>ImageAboveText</value>
   </data>
   <data name="menu_BUTactiondo.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 6pt</value>
+    <value>Arial, 9pt</value>
   </data>
   <data name="menu_BUTactiondo.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2057,7 +2406,7 @@
     <value>Magenta</value>
   </data>
   <data name="menu_BUTactiondo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 69</value>
+    <value>62, 74</value>
   </data>
   <data name="menu_BUTactiondo.Text" xml:space="preserve">
     <value>Do Action</value>
@@ -2069,7 +2418,7 @@
     <value>ImageAboveText</value>
   </data>
   <data name="menu_BUT_clear_track.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 6pt</value>
+    <value>Arial, 9pt</value>
   </data>
   <data name="menu_BUT_clear_track.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2100,7 +2449,7 @@
     <value>Magenta</value>
   </data>
   <data name="menu_BUT_clear_track.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 69</value>
+    <value>74, 74</value>
   </data>
   <data name="menu_BUT_clear_track.Text" xml:space="preserve">
     <value>Clear Track</value>
@@ -2112,7 +2461,7 @@
     <value>ImageAboveText</value>
   </data>
   <data name="menu_BUT_resumemis.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 6pt</value>
+    <value>Arial, 9pt</value>
   </data>
   <data name="menu_BUT_resumemis.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2143,7 +2492,7 @@
     <value>Magenta</value>
   </data>
   <data name="menu_BUT_resumemis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 69</value>
+    <value>105, 74</value>
   </data>
   <data name="menu_BUT_resumemis.Text" xml:space="preserve">
     <value>Resume Mission</value>
@@ -2155,7 +2504,7 @@
     <value>ImageAboveText</value>
   </data>
   <data name="menu_BUT_abortland.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 6pt</value>
+    <value>Arial, 9pt</value>
   </data>
   <data name="menu_BUT_abortland.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2186,7 +2535,7 @@
     <value>Magenta</value>
   </data>
   <data name="menu_BUT_abortland.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 69</value>
+    <value>87, 74</value>
   </data>
   <data name="menu_BUT_abortland.Text" xml:space="preserve">
     <value>Abort Landing</value>
@@ -2198,13 +2547,13 @@
     <value>ImageAboveText</value>
   </data>
   <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 69</value>
+    <value>0, 74</value>
   </data>
   <data name="menuStrip1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1178, 69</value>
+    <value>1178, 74</value>
   </data>
   <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -2231,10 +2580,10 @@
     <value>4, 4, 4, 4</value>
   </data>
   <data name="panel1.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>133332, 207</value>
+    <value>133332, 222</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1178, 207</value>
+    <value>1178, 216</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -2450,6 +2799,12 @@
   <data name="&gt;&gt;MenuConnect.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;menu_tablogbrowse.Name" xml:space="preserve">
+    <value>menu_tablogbrowse</value>
+  </data>
+  <data name="&gt;&gt;menu_tablogbrowse.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;toolStripConnectionControl.Name" xml:space="preserve">
     <value>toolStripConnectionControl</value>
   </data>
@@ -2594,6 +2949,42 @@
   <data name="&gt;&gt;BUT_Trigger_Camera_NOW.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;LB_BUT_DFMavlink.Name" xml:space="preserve">
+    <value>LB_BUT_DFMavlink</value>
+  </data>
+  <data name="&gt;&gt;LB_BUT_DFMavlink.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LB_BUT_dflogtokml.Name" xml:space="preserve">
+    <value>LB_BUT_dflogtokml</value>
+  </data>
+  <data name="&gt;&gt;LB_BUT_dflogtokml.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LB_BUT_logbrowse.Name" xml:space="preserve">
+    <value>LB_BUT_logbrowse</value>
+  </data>
+  <data name="&gt;&gt;LB_BUT_logbrowse.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LB_BUT_bintolog.Name" xml:space="preserve">
+    <value>LB_BUT_bintolog</value>
+  </data>
+  <data name="&gt;&gt;LB_BUT_bintolog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LB_BUT_loganalysis.Name" xml:space="preserve">
+    <value>LB_BUT_loganalysis</value>
+  </data>
+  <data name="&gt;&gt;LB_BUT_loganalysis.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LB_BUT_matlab.Name" xml:space="preserve">
+    <value>LB_BUT_matlab</value>
+  </data>
+  <data name="&gt;&gt;LB_BUT_matlab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;menu_ARM.Name" xml:space="preserve">
     <value>menu_ARM</value>
   </data>
@@ -2642,6 +3033,12 @@
   <data name="&gt;&gt;menu_BUT_resumemis.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;menu_BUT_abortland.Name" xml:space="preserve">
+    <value>menu_BUT_abortland</value>
+  </data>
+  <data name="&gt;&gt;menu_BUT_abortland.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;toolStripTextBox1.Name" xml:space="preserve">
     <value>toolStripTextBox1</value>
   </data>
@@ -2653,12 +3050,6 @@
   </data>
   <data name="&gt;&gt;nishuosToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;menu_BUT_abortland.Name" xml:space="preserve">
-    <value>menu_BUT_abortland</value>
-  </data>
-  <data name="&gt;&gt;menu_BUT_abortland.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>MainV2</value>

@@ -207,4 +207,25 @@
   <data name="menu_BUT_abortland.Text" xml:space="preserve">
     <value>放弃着陆</value>
   </data>
+  <data name="menu_tablogbrowse.Text" xml:space="preserve">
+    <value>数据闪存日志</value>
+  </data>
+  <data name="LB_BUT_bintolog.Text" xml:space="preserve">
+    <value>PX4 .Bin转.Log</value>
+  </data>
+  <data name="LB_BUT_dflogtokml.Text" xml:space="preserve">
+    <value>创建KML+gpx</value>
+  </data>
+  <data name="LB_BUT_DFMavlink.Text" xml:space="preserve">
+    <value>通过MavLink下载闪存日志</value>
+  </data>
+  <data name="LB_BUT_loganalysis.Text" xml:space="preserve">
+    <value>自动分析</value>
+  </data>
+  <data name="LB_BUT_logbrowse.Text" xml:space="preserve">
+    <value>回顾日志</value>
+  </data>
+  <data name="LB_BUT_matlab.Text" xml:space="preserve">
+    <value>创建MATLAB文件</value>
+  </data>
 </root>

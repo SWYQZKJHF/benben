@@ -51,6 +51,7 @@ namespace MissionPlanner
             this.MenuHelp = new System.Windows.Forms.ToolStripButton();
             this.MenuDonate = new System.Windows.Forms.ToolStripButton();
             this.MenuConnect = new System.Windows.Forms.ToolStripButton();
+            this.menu_tablogbrowse = new System.Windows.Forms.ToolStripButton();
             this.toolStripConnectionControl = new MissionPlanner.Controls.ToolStripConnectionControl();
             this.MenuArduPilot = new System.Windows.Forms.ToolStripButton();
             this.menu = new MissionPlanner.Controls.MyButton();
@@ -78,6 +79,12 @@ namespace MissionPlanner
             this.BUT_MISSION_START = new System.Windows.Forms.ToolStripButton();
             this.BUT_PREFLIGHT_REBOOT_SHUTDOWN = new System.Windows.Forms.ToolStripButton();
             this.BUT_Trigger_Camera_NOW = new System.Windows.Forms.ToolStripButton();
+            this.LB_BUT_DFMavlink = new System.Windows.Forms.ToolStripButton();
+            this.LB_BUT_dflogtokml = new System.Windows.Forms.ToolStripButton();
+            this.LB_BUT_logbrowse = new System.Windows.Forms.ToolStripButton();
+            this.LB_BUT_bintolog = new System.Windows.Forms.ToolStripButton();
+            this.LB_BUT_loganalysis = new System.Windows.Forms.ToolStripButton();
+            this.LB_BUT_matlab = new System.Windows.Forms.ToolStripButton();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menu_ARM = new System.Windows.Forms.ToolStripButton();
             this.Menu_quickauto = new System.Windows.Forms.ToolStripButton();
@@ -87,9 +94,9 @@ namespace MissionPlanner
             this.menu_BUTactiondo = new System.Windows.Forms.ToolStripButton();
             this.menu_BUT_clear_track = new System.Windows.Forms.ToolStripButton();
             this.menu_BUT_resumemis = new System.Windows.Forms.ToolStripButton();
+            this.menu_BUT_abortland = new System.Windows.Forms.ToolStripButton();
             this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
             this.nishuosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menu_BUT_abortland = new System.Windows.Forms.ToolStripButton();
             this.MainMenu.SuspendLayout();
             this.CTX_mainmenu.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -114,6 +121,7 @@ namespace MissionPlanner
             this.MenuHelp,
             this.MenuDonate,
             this.MenuConnect,
+            this.menu_tablogbrowse,
             this.toolStripConnectionControl,
             this.MenuArduPilot});
             resources.ApplyResources(this.MainMenu, "MainMenu");
@@ -260,6 +268,15 @@ namespace MissionPlanner
             this.MenuConnect.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
             this.MenuConnect.Click += new System.EventHandler(this.MenuConnect_Click);
             // 
+            // menu_tablogbrowse
+            // 
+            resources.ApplyResources(this.menu_tablogbrowse, "menu_tablogbrowse");
+            this.menu_tablogbrowse.ForeColor = System.Drawing.Color.White;
+            this.menu_tablogbrowse.Margin = new System.Windows.Forms.Padding(0);
+            this.menu_tablogbrowse.Name = "menu_tablogbrowse";
+            this.menu_tablogbrowse.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
+            this.menu_tablogbrowse.Click += new System.EventHandler(this.menu_tablogbrowse_Click);
+            // 
             // toolStripConnectionControl
             // 
             this.toolStripConnectionControl.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
@@ -328,7 +345,13 @@ namespace MissionPlanner
             this.BUT_PREFLIGHT_CALIBRATION,
             this.BUT_MISSION_START,
             this.BUT_PREFLIGHT_REBOOT_SHUTDOWN,
-            this.BUT_Trigger_Camera_NOW});
+            this.BUT_Trigger_Camera_NOW,
+            this.LB_BUT_DFMavlink,
+            this.LB_BUT_dflogtokml,
+            this.LB_BUT_logbrowse,
+            this.LB_BUT_bintolog,
+            this.LB_BUT_loganalysis,
+            this.LB_BUT_matlab});
             this.menuStrip2.Name = "menuStrip2";
             this.menuStrip2.ShowItemToolTips = true;
             this.menuStrip2.Stretch = false;
@@ -509,6 +532,60 @@ namespace MissionPlanner
             this.BUT_Trigger_Camera_NOW.Name = "BUT_Trigger_Camera_NOW";
             this.BUT_Trigger_Camera_NOW.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
             // 
+            // LB_BUT_DFMavlink
+            // 
+            resources.ApplyResources(this.LB_BUT_DFMavlink, "LB_BUT_DFMavlink");
+            this.LB_BUT_DFMavlink.ForeColor = System.Drawing.Color.White;
+            this.LB_BUT_DFMavlink.Margin = new System.Windows.Forms.Padding(0);
+            this.LB_BUT_DFMavlink.Name = "LB_BUT_DFMavlink";
+            this.LB_BUT_DFMavlink.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
+            this.LB_BUT_DFMavlink.Click += new System.EventHandler(this.LB_BUT_DFMavlink_Click);
+            // 
+            // LB_BUT_dflogtokml
+            // 
+            resources.ApplyResources(this.LB_BUT_dflogtokml, "LB_BUT_dflogtokml");
+            this.LB_BUT_dflogtokml.ForeColor = System.Drawing.Color.White;
+            this.LB_BUT_dflogtokml.Margin = new System.Windows.Forms.Padding(0);
+            this.LB_BUT_dflogtokml.Name = "LB_BUT_dflogtokml";
+            this.LB_BUT_dflogtokml.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
+            this.LB_BUT_dflogtokml.Click += new System.EventHandler(this.LB_BUT_dflogtokml_Click);
+            // 
+            // LB_BUT_logbrowse
+            // 
+            resources.ApplyResources(this.LB_BUT_logbrowse, "LB_BUT_logbrowse");
+            this.LB_BUT_logbrowse.ForeColor = System.Drawing.Color.White;
+            this.LB_BUT_logbrowse.Margin = new System.Windows.Forms.Padding(0);
+            this.LB_BUT_logbrowse.Name = "LB_BUT_logbrowse";
+            this.LB_BUT_logbrowse.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
+            this.LB_BUT_logbrowse.Click += new System.EventHandler(this.LB_BUT_logbrowse_Click);
+            // 
+            // LB_BUT_bintolog
+            // 
+            resources.ApplyResources(this.LB_BUT_bintolog, "LB_BUT_bintolog");
+            this.LB_BUT_bintolog.ForeColor = System.Drawing.Color.White;
+            this.LB_BUT_bintolog.Margin = new System.Windows.Forms.Padding(0);
+            this.LB_BUT_bintolog.Name = "LB_BUT_bintolog";
+            this.LB_BUT_bintolog.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
+            this.LB_BUT_bintolog.Click += new System.EventHandler(this.LB_BUT_bintolog_Click);
+            // 
+            // LB_BUT_loganalysis
+            // 
+            resources.ApplyResources(this.LB_BUT_loganalysis, "LB_BUT_loganalysis");
+            this.LB_BUT_loganalysis.ForeColor = System.Drawing.Color.White;
+            this.LB_BUT_loganalysis.Margin = new System.Windows.Forms.Padding(0);
+            this.LB_BUT_loganalysis.Name = "LB_BUT_loganalysis";
+            this.LB_BUT_loganalysis.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
+            this.LB_BUT_loganalysis.Click += new System.EventHandler(this.LB_BUT_loganalysis_Click);
+            // 
+            // LB_BUT_matlab
+            // 
+            resources.ApplyResources(this.LB_BUT_matlab, "LB_BUT_matlab");
+            this.LB_BUT_matlab.ForeColor = System.Drawing.Color.White;
+            this.LB_BUT_matlab.Margin = new System.Windows.Forms.Padding(0);
+            this.LB_BUT_matlab.Name = "LB_BUT_matlab";
+            this.LB_BUT_matlab.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
+            this.LB_BUT_matlab.Click += new System.EventHandler(this.LB_BUT_matlab_Click);
+            // 
             // menuStrip1
             // 
             this.menuStrip1.BackgroundImage = global::MissionPlanner.Properties.Resources.bgdark;
@@ -602,6 +679,15 @@ namespace MissionPlanner
             this.menu_BUT_resumemis.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
             this.menu_BUT_resumemis.Click += new System.EventHandler(this.menu_BUT_resumemis_Click);
             // 
+            // menu_BUT_abortland
+            // 
+            resources.ApplyResources(this.menu_BUT_abortland, "menu_BUT_abortland");
+            this.menu_BUT_abortland.ForeColor = System.Drawing.Color.White;
+            this.menu_BUT_abortland.Margin = new System.Windows.Forms.Padding(0);
+            this.menu_BUT_abortland.Name = "menu_BUT_abortland";
+            this.menu_BUT_abortland.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
+            this.menu_BUT_abortland.Click += new System.EventHandler(this.menu_BUT_abortland_Click);
+            // 
             // toolStripTextBox1
             // 
             this.toolStripTextBox1.Name = "toolStripTextBox1";
@@ -611,15 +697,6 @@ namespace MissionPlanner
             // 
             this.nishuosToolStripMenuItem.Name = "nishuosToolStripMenuItem";
             resources.ApplyResources(this.nishuosToolStripMenuItem, "nishuosToolStripMenuItem");
-            // 
-            // menu_BUT_abortland
-            // 
-            resources.ApplyResources(this.menu_BUT_abortland, "menu_BUT_abortland");
-            this.menu_BUT_abortland.ForeColor = System.Drawing.Color.White;
-            this.menu_BUT_abortland.Margin = new System.Windows.Forms.Padding(0);
-            this.menu_BUT_abortland.Name = "menu_BUT_abortland";
-            this.menu_BUT_abortland.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
-            this.menu_BUT_abortland.Click += new System.EventHandler(this.menu_BUT_abortland_Click);
             // 
             // MainV2
             // 
@@ -704,5 +781,12 @@ namespace MissionPlanner
         public System.Windows.Forms.ToolStripButton menu_BUT_clear_track;
         public System.Windows.Forms.ToolStripButton menu_BUT_resumemis;
         public System.Windows.Forms.ToolStripButton menu_BUT_abortland;
+        public System.Windows.Forms.ToolStripButton menu_tablogbrowse;
+        public System.Windows.Forms.ToolStripButton LB_BUT_DFMavlink;
+        public System.Windows.Forms.ToolStripButton LB_BUT_dflogtokml;
+        public System.Windows.Forms.ToolStripButton LB_BUT_logbrowse;
+        public System.Windows.Forms.ToolStripButton LB_BUT_bintolog;
+        public System.Windows.Forms.ToolStripButton LB_BUT_loganalysis;
+        public System.Windows.Forms.ToolStripButton LB_BUT_matlab;
     }
 }

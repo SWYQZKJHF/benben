@@ -189,31 +189,37 @@ namespace MissionPlanner.Utilities
                 // do the update in the main thread
                 MainV2.instance.Invoke((MethodInvoker) delegate
                 {
-                    string extra = "";
+                    //海帆添加20180102：作为处理的可能的关闭更新的方法
+                    if (false) {
+                        string extra = "";
 
-                    if (dobeta)
-                        extra = "BETA ";
+                        if (dobeta)
+                            extra = "BETA ";
 
-                    DialogResult dr = DialogResult.Cancel;
+                        DialogResult dr = DialogResult.Cancel;
 
 
-                    dr = CustomMessageBox.Show(
-                        extra + Strings.UpdateFound + " [link;" + baseurl + "/ChangeLog.txt;ChangeLog]",
-                        Strings.UpdateNow, MessageBoxButtons.YesNo);
+                        dr = CustomMessageBox.Show(
+                            extra + Strings.UpdateFound + " [link;" + baseurl + "/ChangeLog.txt;ChangeLog]",
+                            Strings.UpdateNow, MessageBoxButtons.YesNo);
 
-                    if (dr == DialogResult.Yes)
-                    {
-                        DoUpdate();
+                        if (dr == DialogResult.Yes)
+                        {
+                            //DoUpdate();
+                            MessageBox.Show("hahahahahaha");
+                        }
+                        else
+                        {
+                            return;
+                        }
                     }
-                    else
-                    {
-                        return;
-                    }
+                    
                 });
             }
             else if (NotifyNoUpdate)
             {
-                CustomMessageBox.Show(Strings.UpdateNotFound);
+                //海帆添加20180102：作为处理的可能的关闭更新的方法
+                //CustomMessageBox.Show(Strings.UpdateNotFound);
             }
         }
 

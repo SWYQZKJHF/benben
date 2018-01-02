@@ -200,7 +200,7 @@ namespace MissionPlanner
             // 
             resources.ApplyResources(this.MenuEngineering, "MenuEngineering");
             this.MenuEngineering.ForeColor = System.Drawing.Color.White;
-            this.MenuEngineering.Image = global::MissionPlanner.Properties.Resources.donate;
+            this.MenuEngineering.Image = global::MissionPlanner.Properties.Resources.light_simulation_icon;
             this.MenuEngineering.Margin = new System.Windows.Forms.Padding(0);
             this.MenuEngineering.Name = "MenuEngineering";
             this.MenuEngineering.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);

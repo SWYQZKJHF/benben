@@ -4305,8 +4305,7 @@ namespace MissionPlanner
         {
             FlightData.BUT_matlab_Click(sender, e);
         }
-
-
+        
         //海帆添加20171229：点击选择航点的时候对话框的选项
         private void menu_CMB_setwp_Click(object sender, EventArgs e)
         {

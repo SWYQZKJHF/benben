@@ -2398,62 +2398,7 @@ namespace MissionPlanner.GCSViews
             Control tabGauges = sender as Control;
 
             float scale = tabGauges.Width/(float) tabGauges.Height;
-
-            /*
-            if (scale > 0.5 && scale < 1.9)
-            {
-// square
-                Gvspeed.Visible = true;
-
-                if (tabGauges.Height < tabGauges.Width)
-                    myheight = tabGauges.Height/2;
-                else
-                    myheight = tabGauges.Width/2;
-
-                Gvspeed.Height = myheight;
-                Gspeed.Height = myheight;
-                Galt.Height = myheight;
-                Gheading.Height = myheight;
-
-                Gvspeed.Location = new Point(0, 0);
-                Gspeed.Location = new Point(Gvspeed.Right, 0);
-
-
-                Galt.Location = new Point(0, Gspeed.Bottom);
-                Gheading.Location = new Point(Galt.Right, Gspeed.Bottom);
-
-                return;
-            }
-
             
-            if (tabGauges.Width < 500)
-            {
-                Gvspeed.Visible = false;
-                mywidth = tabGauges.Width/3;
-
-                Gspeed.Height = mywidth;
-                Galt.Height = mywidth;
-                Gheading.Height = mywidth;
-
-                Gspeed.Location = new Point(0, 0);
-            }
-            else
-            {
-                Gvspeed.Visible = true;
-                mywidth = tabGauges.Width/4;
-
-                Gvspeed.Height = mywidth;
-                Gspeed.Height = mywidth;
-                Galt.Height = mywidth;
-                Gheading.Height = mywidth;
-
-                Gvspeed.Location = new Point(0, 0);
-                Gspeed.Location = new Point(Gvspeed.Right, 0);
-            }
-            
-
-            Galt.Location = new Point(Gspeed.Right, 0);
-            Gheading.Location = new Point(Galt.Right, 0);*/
         }
 
         private void BUT_setmode_Click(object sender, EventArgs e)

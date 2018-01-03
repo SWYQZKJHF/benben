@@ -99,10 +99,13 @@ namespace MissionPlanner.Utilities
             if(control is ContainerControl)
                 ((ContainerControl)control).AutoScaleMode = AutoScaleMode.None;
 
+            //海帆添加20180103：选择主题配色
             switch (_currentTheme)
             {
                 case Themes.BurntKermit:
-                    SetBurntKermitColors();
+                    //SetBurntKermitColors();
+                    //ApplyTheme(control, 0);
+                    SetHighContrastColours();
                     ApplyTheme(control, 0);
                     break;
 
@@ -752,10 +755,11 @@ mc:Ignorable=""d""
             }
         }
 
+        //海帆添加20180102：此处可以修改MP界面的背景色和字体等UI界面属性
         private static void SetBurntKermitColors()
         {
             BGColor = Color.FromArgb(0x26, 0x27, 0x28);                     // This changes the colour of the main menu background
-            ControlBGColor = Color.FromArgb(0x43, 0x44, 0x45);              // This changes the colour of the sub menu backgrounds
+            ControlBGColor = Color.FromArgb(0x43, 0x44, 0x45);              //   changes the colour of the sub menu backgrounds
             TextColor = Color.White;                                        // This changes the colour of text
             BGColorTextBox = Color.FromArgb(0x43, 0x44, 0x45);              // This changes the colour of the background of textboxes
             ButtonTextColor = Color.FromArgb(64, 87, 4);                    // This changes the colour of button text

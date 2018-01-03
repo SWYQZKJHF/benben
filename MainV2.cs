@@ -363,7 +363,7 @@ namespace MissionPlanner
         /// </summary>
         public static MainV2 instance = null;
 
-
+        
         public static MainSwitcher View;
 
         /// <summary>
@@ -1104,8 +1104,12 @@ namespace MissionPlanner
             displayicons = icons;
 
             MainMenu.BackColor = SystemColors.MenuBar;
-
             MainMenu.BackgroundImage = displayicons.bg;
+            //海帆添加20180103：随着主题一起更改的操作
+            menuStrip1.BackColor = SystemColors.MenuBar;
+            menuStrip1.BackgroundImage = displayicons.bg;
+            menuStrip2.BackColor = SystemColors.MenuBar;
+            menuStrip2.BackgroundImage = displayicons.bg;
 
             MenuFlightData.Image = displayicons.fd;
             MenuFlightPlanner.Image = displayicons.fp;
@@ -1116,6 +1120,49 @@ namespace MissionPlanner
             MenuConnect.Image = displayicons.connect;
             MenuHelp.Image = displayicons.help;
             MenuDonate.Image = displayicons.donate;
+            //海帆添加20180103：随着主题一起更改的操作
+            MenuEngineering.Image = displayicons.sim;
+            menu_tablogbrowse.Image = displayicons.fp;
+            menu_ARM.Image = displayicons.terminal;
+            Menu_quickauto.Image = displayicons.terminal;
+            Menu_quickmanual.Image = displayicons.terminal;
+            menu_quickrtl.Image = displayicons.terminal;
+            menu_othermode.Image = displayicons.terminal;
+            BUT_LOITER_UNLIM.Image = displayicons.terminal;
+            menu_Set_waypoint.Image = displayicons.terminal;
+            menu_BUTactiondo.Image = displayicons.terminal;
+            menu_BUT_clear_track.Image = displayicons.terminal;
+            menu_BUT_resumemis.Image = displayicons.terminal;
+            menu_BUT_abortland.Image = displayicons.terminal;
+            other_Stabilize.Image = displayicons.terminal;
+            other_Acro.Image = displayicons.terminal;
+            other_AltHold.Image = displayicons.terminal;
+            other_Guided.Image = displayicons.terminal;
+            other_Circle.Image = displayicons.terminal;
+            other_Land.Image = displayicons.terminal;
+            other_Drift.Image = displayicons.terminal;
+            other_Sport.Image = displayicons.terminal;
+            other_Flip.Image = displayicons.terminal;
+            other_AutoTune.Image = displayicons.terminal;
+            other_PosHold.Image = displayicons.terminal;
+            other_Brake.Image = displayicons.terminal;
+            other_Throw.Image = displayicons.terminal;
+            other_Avoid_ADSB.Image = displayicons.terminal;
+            other_Guided_NoGPS.Image = displayicons.terminal;
+            other_Smart_RTL.Image = displayicons.terminal;
+            BUT_RETURN_TO_LAUNCH.Image = displayicons.terminal;
+            BUT_PREFLIGHT_CALIBRATION.Image = displayicons.terminal;
+            BUT_MISSION_START.Image = displayicons.terminal;
+            BUT_PREFLIGHT_REBOOT_SHUTDOWN.Image = displayicons.terminal;
+            BUT_Trigger_Camera_NOW.Image = displayicons.terminal;
+            LB_BUT_DFMavlink.Image = displayicons.terminal;
+            LB_BUT_dflogtokml.Image = displayicons.terminal;
+            LB_BUT_logbrowse.Image = displayicons.terminal;
+            LB_BUT_bintolog.Image = displayicons.terminal;
+            LB_BUT_loganalysis.Image = displayicons.terminal;
+            LB_BUT_matlab.Image = displayicons.terminal;
+            menu_BUT_setwp.Image = displayicons.terminal;
+
 
 
             MenuFlightData.ForeColor = ThemeManager.TextColor;
@@ -1127,6 +1174,65 @@ namespace MissionPlanner
             MenuConnect.ForeColor = ThemeManager.TextColor;
             MenuHelp.ForeColor = ThemeManager.TextColor;
             MenuDonate.ForeColor = ThemeManager.TextColor;
+            //海帆添加20180103：随着主题一起更改的操作
+            MenuEngineering.ForeColor = ThemeManager.TextColor;
+            menu_tablogbrowse.ForeColor = ThemeManager.TextColor;
+            menu_ARM.ForeColor = ThemeManager.TextColor;
+            Menu_quickauto.ForeColor = ThemeManager.TextColor;
+            Menu_quickmanual.ForeColor = ThemeManager.TextColor;
+            menu_quickrtl.ForeColor = ThemeManager.TextColor;
+            menu_othermode.ForeColor = ThemeManager.TextColor;
+            BUT_LOITER_UNLIM.ForeColor = ThemeManager.TextColor;
+            menu_Set_waypoint.ForeColor = ThemeManager.TextColor;
+            menu_BUTactiondo.ForeColor = ThemeManager.TextColor;
+            menu_BUT_clear_track.ForeColor = ThemeManager.TextColor;
+            menu_BUT_resumemis.ForeColor = ThemeManager.TextColor;
+            menu_BUT_abortland.ForeColor = ThemeManager.TextColor;
+            other_Stabilize.ForeColor = ThemeManager.TextColor;
+            other_Acro.ForeColor = ThemeManager.TextColor;
+            other_AltHold.ForeColor = ThemeManager.TextColor;
+            other_Guided.ForeColor = ThemeManager.TextColor;
+            other_Circle.ForeColor = ThemeManager.TextColor;
+            other_Land.ForeColor = ThemeManager.TextColor;
+            other_Drift.ForeColor = ThemeManager.TextColor;
+            other_Sport.ForeColor = ThemeManager.TextColor;
+            other_Flip.ForeColor = ThemeManager.TextColor;
+            other_AutoTune.ForeColor = ThemeManager.TextColor;
+            other_PosHold.ForeColor = ThemeManager.TextColor;
+            other_Brake.ForeColor = ThemeManager.TextColor;
+            other_Throw.ForeColor = ThemeManager.TextColor;
+            other_Avoid_ADSB.ForeColor = ThemeManager.TextColor;
+            other_Guided_NoGPS.ForeColor = ThemeManager.TextColor;
+            other_Smart_RTL.ForeColor = ThemeManager.TextColor;
+            BUT_RETURN_TO_LAUNCH.ForeColor = ThemeManager.TextColor;
+            BUT_PREFLIGHT_CALIBRATION.ForeColor = ThemeManager.TextColor;
+            BUT_MISSION_START.ForeColor = ThemeManager.TextColor;
+            BUT_PREFLIGHT_REBOOT_SHUTDOWN.ForeColor = ThemeManager.TextColor;
+            BUT_Trigger_Camera_NOW.ForeColor = ThemeManager.TextColor;
+            LB_BUT_DFMavlink.ForeColor = ThemeManager.TextColor;
+            LB_BUT_dflogtokml.ForeColor = ThemeManager.TextColor;
+            LB_BUT_logbrowse.ForeColor = ThemeManager.TextColor;
+            LB_BUT_bintolog.ForeColor = ThemeManager.TextColor;
+            LB_BUT_loganalysis.ForeColor = ThemeManager.TextColor;
+            LB_BUT_matlab.ForeColor = ThemeManager.TextColor;
+            menu_BUT_setwp.ForeColor = ThemeManager.TextColor;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         }
 
         void MenuCustom_Click(object sender, EventArgs e)
